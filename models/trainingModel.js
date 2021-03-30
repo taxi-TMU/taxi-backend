@@ -10,7 +10,7 @@ const trainingSchema = new Schema({
     simulation: { type: Boolean, required: true },
     time_start: { type: Date },
     time_end: { type: Date },
-    question_set: [{ type: ObjectId, ref: 'Question', required: true }]
+    question_set: [{ type: ObjectId, ref: 'Question' }]
 
 })
 

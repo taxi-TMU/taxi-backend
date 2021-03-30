@@ -2,14 +2,14 @@ const SubCategory = require('../models/subCategoryModel')
 
 
 exports.create_sub_category = async (req, res) => {
-    const { name, sub_categories } = req.body
+    const { name, category, questions } = req.body
     try {
         const createdCategory = await SubCategory.create({ 
-            name, sub_categories
+          name, category, questions
         })
         res.json(createdCategory)
     } catch (e) {
-        res.status(500).send('Error while creating the subCategory')
+        res.status(500).send(e.message)
     }
 }
 
@@ -27,10 +27,10 @@ exports.find_sub_category = async (req, res) => {
 
 
 exports.list_sub_categories = async (req, res) => {
-    try {
-      const allSubCategories = await SubCategory.find({})
-      res.json(allSubCategories)
-    } catch (e) {
-      res.status(500).send(e.message)
-    }
+  try {
+    const allSubCategories = await SubCategory.find({})
+    res.json(allSubCategories)
+  } catch (e) {
+    res.status(500).send(e.message)
   }
+}
