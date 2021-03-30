@@ -1,0 +1,1384 @@
+[
+  {
+    "question": "Was Regelt des Personenbeförderungsgesetz? ",
+    "answers": []
+  },
+  {
+    "question": "Welche Beförderung von Personen unterliegen dem Personenbeförderungsgesetz (PBefG)?",
+    "answers": []
+  },
+  {
+    "question": "Welche Beförderungen von Personen unterliegen nicht dem Personenbeförderungsgesetz?",
+    "answers": [
+      {
+        "_id": "66d5a9a7-cfbd-4a51-b9fb-1ead1f0888be",
+        "text": "Beförderungen mit Personenkraftwagen, wenn diese unentgeltlich sind oder das Gesamtentgelt die Betriebskosten der Fahrt nicht übersteigt.",
+        "checked": true
+      },
+      {
+        "_id": "ef33283f-b5f0-4998-b0d2-27d0f312fb57",
+        "text": "Beförderungen mit Krankenkraftwagen, wenn damit kranke, verletzte oder sonstige hilfsbedürftige Personen befördert werden.&quot;",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Wer unterliegt dem PBefG?   ",
+    "answers": []
+  },
+  {
+    "question": "Wer unterliegt nicht dem PBefG?  ",
+    "answers": []
+  },
+  {
+    "question": "Wer ist Unternehmer im Sinne des PBefG?",
+    "answers": [
+      {
+        "_id": "abebe86d-c72d-441c-a8e2-fa90f5612234",
+        "text": "Wer den Verkehr in eigener Verantwortung ausübt und in Besitz der Genehmigung ist.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Welche Arten von Verkehrsmitteln unterliegen dem PBefG?",
+    "answers": [
+      {
+        "_id": "2e487618-6c69-4678-990c-2a01e81da496",
+        "text": "Kraftfahrzeuge im Linienverkehr",
+        "checked": true
+      },
+      {
+        "_id": "7e73d3c1-e59b-408c-96f5-b4bf52069866",
+        "text": "Kraftfahrzeuge im Gelegenheitsverkehr",
+        "checked": true
+      },
+      {
+        "_id": "75ae892b-6d33-42dc-bafe-be36020e27ca",
+        "text": "Straßenbahnen",
+        "checked": true
+      },
+      {
+        "_id": "5fc63eac-0e5e-449f-859a-69c5db137314",
+        "text": "Obussen (Oberleitungsomnibussen)",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was sind Kraftfahrzeuge im Sinne des Personenbeförderungsgesetzes?",
+    "answers": []
+  },
+  {
+    "question": "Welche Arten von Kraftfahrzeuge nach PBefG kennen Sie?",
+    "answers": [
+      {
+        "_id": "55c52877-e693-4e17-8952-f406051b0e52",
+        "text": "Personenkraftwagen",
+        "checked": true
+      },
+      {
+        "_id": "79eb35af-ace3-4794-b9f4-4e27cb2635f8",
+        "text": "Kraftomnibusse",
+        "checked": true
+      },
+      {
+        "_id": "7b12bc85-8216-44d9-9be2-3a88883f7083",
+        "text": "Lastkraftwagen",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was verstehen Sie unter &quot;entgeltlich&quot; nach PBefG?",
+    "answers": []
+  },
+  {
+    "question": "Was verstehen Sie unter &quot;geschäftsmäßig&quot; nach PBefG? ",
+    "answers": []
+  },
+  {
+    "question": "Was verstehen Sie unter Taxiverkehr )Verkehr mit Taxen(?",
+    "answers": [
+      {
+        "_id": "558050df-aec5-486a-84d8-2a3e3e72d953",
+        "text": "Die Personenbeförderung mit einem Pkw, den der Unternehmer auf öffentlichen Straßen oder Plätzen bereithält.",
+        "checked": true
+      },
+      {
+        "_id": "31e8bda2-3269-4b51-805f-8cad1da5b5b6",
+        "text": "Es werden damit Fahrten zu einem vom Fahrgast bestimmten Ziel durchgeführt.",
+        "checked": true
+      },
+      {
+        "_id": "bee7fecc-d0e6-47cc-81ec-0d0850a425b3",
+        "text": "Die Beförderung von bis zu  Personen.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was verstehen Sie unter Linienverkehr?",
+    "answers": []
+  },
+  {
+    "question": "Welche Beförderungsmittel zählen noch zu dem Oberbegriff &quot;Straßenbahnen&quot;?",
+    "answers": [
+      {
+        "_id": "6bc2959e-9278-4580-ae94-1152448ffb6f",
+        "text": "Straßenbahnen sind Schienenbahnen",
+        "checked": true
+      },
+      {
+        "_id": "a6bce479-470d-4dc6-87b7-704e1b82741e",
+        "text": "UBahn, SBahn, Zug",
+        "checked": true
+      },
+      {
+        "_id": "f0618e53-41a0-4aa6-a2c4-d5e7e0079e61",
+        "text": "Schwebebahnen",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Erklären Sie den Begriff „Gelegenheitsverkehr&quot;! Was verstehen Sie unter &quot;Gelegenheitsverkehr&quot;?",
+    "answers": []
+  },
+  {
+    "question": "Gelegenheitsverkehr bedeutet? ",
+    "answers": []
+  },
+  {
+    "question": "Zählt die Krankenbeförderung zum Gelegenheitsverkehr?  ",
+    "answers": []
+  },
+  {
+    "question": "Erklären Sie den Begriff „Freistellungs-Verordnung&quot; nach dem PBefG? ",
+    "answers": []
+  },
+  {
+    "question": "Wer ist vom PBefG freigestellt?",
+    "answers": [
+      {
+        "_id": "b6afcbd6-8565-4222-a185-36d4748b1004",
+        "text": "Kraftfahrzeuge außerhalb öffentlicher Straßen.",
+        "checked": true
+      },
+      {
+        "_id": "8363ac46-1a88-4d2c-a273-bbddfbff11c1",
+        "text": "Hoheitlicher Verkehr (Polizei, Feuerwehr, Bundeswehr)",
+        "checked": true
+      },
+      {
+        "_id": "7c829160-8521-4e56-ad39-4eca6b4f60a4",
+        "text": "Krankenkraftwagen (Beförderung hilfsbedürftiger Personen)",
+        "checked": true
+      },
+      {
+        "_id": "81e45d2d-7abb-4b90-b977-4a5fe6507b96",
+        "text": "Behindertenfahrten",
+        "checked": true
+      },
+      {
+        "_id": "1fcc9587-937c-4a49-b1a9-4e22fc9d2e92",
+        "text": "Kindergartenfahrten",
+        "checked": true
+      },
+      {
+        "_id": "c7ba0109-33c8-4710-a90f-19b5bfb4b63f",
+        "text": "Schülerfahrten",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was ist der öffentliche Personennahverkehr (ÖPNV) im Sinne des Gesetzes?",
+    "answers": [
+      {
+        "_id": "ac909a40-8520-448c-b7e5-6d4572d42143",
+        "text": "ÖPNV ist die allgemein zugängliche Beförderung von Personen mit Straßenbahnen, Obussen und Kraftfahrzeugen im Linienverkehr, die überwiegend dazu bestimmt sind, die Verkehrsnachfrage im Stadt, Vorortoder Regionalverkehr zu befriedigen.",
+        "checked": true
+      },
+      {
+        "_id": "57f10e07-95da-4caf-9819-409949b3bfde",
+        "text": "Das ist im Zweifel der Fall, wenn in der Mehrzahl der Beförderungsfälle eines Verkehrsmittels die gesamte Reiseweite  Kilometer oder die gesamte Reisezeit eine Stunde nicht übersteigt.",
+        "checked": true
+      },
+      {
+        "_id": "8d9048e0-e748-4947-ba6e-ea7ce2c17446",
+        "text": "ÖPNV ist auch der Verkehr mit Taxen oder Mietwagen, der eine der genannten Verkehrsarten ersetzt, ergänzt oder verdichtet. ersetzt, ergänzt oder verdichtet.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Welche Verkehrsart gehört zum öffentlichen Personennahverkehr (ÖPNV)?",
+    "answers": [
+      {
+        "_id": "d18ff793-4be3-4588-ad6b-e4bc60a37d1f",
+        "text": "Taxiverkehr، Omnibusverkehr",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was ist genehmigungspflichtiger Sonderverkehr?",
+    "answers": [
+      {
+        "_id": "66d0168c-2b37-4e46-a369-719dceba3c4d",
+        "text": "Frauennachttaxi (FNT)",
+        "checked": true
+      },
+      {
+        "_id": "57fe170a-281c-4aa7-bf3d-1cb0cb1fc9be",
+        "text": "Theater Sammeltaxi",
+        "checked": true
+      },
+      {
+        "_id": "6962488c-0f50-4a53-a961-7d81ca3df81d",
+        "text": "Anrufsammeltaxi (AST)",
+        "checked": true
+      },
+      {
+        "_id": "91ce6868-5678-4c40-ab5a-35d02968bba6",
+        "text": "Discotaxi",
+        "checked": true
+      },
+      {
+        "_id": "6e9b0794-1f3b-4c96-8659-efbf2d204998",
+        "text": "Jugendnachttaxi",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was verstehen Sie unter Frauennachttaxi?",
+    "answers": []
+  },
+  {
+    "question": "Welche sind die wichtigsten Rechtsgrundlagen des deutschen Straßenverkehrsrechts?",
+    "answers": [
+      {
+        "_id": "bfba5191-5fca-4f0c-a25a-e2073e57b230",
+        "text": "Straßenverkehrsgesetz (StVG)",
+        "checked": true
+      },
+      {
+        "_id": "51b4e00d-c94f-48b1-b86a-59126f84ff1f",
+        "text": "StraßenverkehrsOrdnung (StVO)",
+        "checked": true
+      },
+      {
+        "_id": "d430a51d-9dc9-4529-9b05-fe6ae4ca9a11",
+        "text": "StraßenverkehrsZulassungsOrdnung (StVZO)",
+        "checked": true
+      },
+      {
+        "_id": "23f144a4-ef84-4eb2-be8b-7ec9c6b78f9c",
+        "text": "Fahrerlaubnisverordnung (FeV)",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was ist in der StVO geregelt?",
+    "answers": [
+      {
+        "_id": "2617060d-55df-474e-884a-232d506683ca",
+        "text": "Sie regelt den öffentlichen Verkehr.",
+        "checked": true
+      },
+      {
+        "_id": "439947a4-07c5-4bb0-8fa8-9c9d21903d6b",
+        "text": "Grundregel: Die Teilnahme am Straßenverkehr erfordert ständige Vorsicht und gegenseitige Rücksicht.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Wie lautet die Grundregel im Straßenverkehr? ",
+    "answers": [
+      {
+        "_id": "5932ed87-cbb6-49b6-a79d-c75a0d182612",
+        "text": "Die Teilnahme am Straßenverkehr erfordert ständige Vorsicht und gegenseitige Rücksicht.",
+        "checked": true
+      },
+      {
+        "_id": "e469429c-3f44-4bec-b72d-3c96f02ae6c6",
+        "text": "Wer am Verkehr teilnimmt, hat sich so zu verhalten, dass kein Anderer geschädigt, gefährdet oder mehr, als nach den Umständen unvermeidbar, behindert oder belästigt wird.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Nach welchen Grundregeln sollen Sie sich im Straßenverkehr verhalten?",
+    "answers": [
+      {
+        "_id": "4aa13137-ab94-4117-9e9a-6da7f40d7c6a",
+        "text": "Keinen schädigen. ",
+        "checked": true
+      },
+      {
+        "_id": "2eed0d20-cb0b-4319-a3a8-3f2dc8cdf45f",
+        "text": "Keinen gefährden.  ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was wird in der Straßenverkehrs-Ordnung (StVO) nach § 1 als Grundregeln vorausgesetzt?",
+    "answers": [
+      {
+        "_id": "f52e9a7c-d05f-43fc-8c10-3ed634af35f2",
+        "text": "Ständige Vorsicht.",
+        "checked": true
+      },
+      {
+        "_id": "6cbe5c8a-14b3-4054-90c7-ee5c9005ec2e",
+        "text": "Keinen Anderen schädigen.",
+        "checked": true
+      },
+      {
+        "_id": "a07d58ce-087e-4f1a-916c-acabe82a7fa2",
+        "text": "Keinen Anderen gefährden.",
+        "checked": true
+      },
+      {
+        "_id": "1ccd7a4a-1097-4147-90ac-553ddceb1aa3",
+        "text": "Gegenseitige Rücksicht.",
+        "checked": true
+      },
+      {
+        "_id": "a2f7fcaf-5f67-4012-a510-208f03cd9065",
+        "text": "Keinen Anderen behindern oder belästigen.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was wird in der Straßenverkehrs-Ordnung (StVO) nach § 1 als Grundregeln vorausgesetzt?",
+    "answers": [
+      {
+        "_id": "bd2d5478-a8b4-4efa-9c99-a0568a42b2e0",
+        "text": "Sie regelt die Zulassung und die Vorschriften der Beschaffenheit von Fahrzeugen.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was ist in der StVZO geregelt?",
+    "answers": [
+      {
+        "_id": "8169d30f-3812-42ef-90b8-030452be1916",
+        "text": "Sie regelt die Zulassung und die Vorschriften der Beschaffenheit von Fahrzeugen.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Wer erteilt bei Taxi- und Mietwagenunternehmern die Genehmigungen?",
+    "answers": [
+      {
+        "_id": "d51266a2-51f1-457d-9fa0-5c0a6a0074a9",
+        "text": "Die Genehmigungsbehörde.",
+        "checked": true
+      },
+      {
+        "_id": "a03fc591-86c9-4636-9f3a-88e5a6b2b35e",
+        "text": "Die Straßenverkehrsbehörde.",
+        "checked": true
+      },
+      {
+        "_id": "d99fb3f8-8e04-423d-af61-714d35acf15b",
+        "text": "Das Baureferat.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Wer ist für den Taxi- und Mietwagenunternehmer die zuständige Genehmigungs- und Aufsichtsbehörde?",
+    "answers": [
+      {
+        "_id": "eee3b8a8-b3f0-4737-a746-4be9d7ae1ba8",
+        "text": "Die Straßenverkehrsbehörde der Stadt/des Landkreises.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Für wie lange wird die Erteilung der Genehmigungen für den Taxiverkehr als Neubewerber gewährt?",
+    "answers": [
+      {
+        "_id": "1eb08348-ae2f-43eb-8152-f953a18f7d63",
+        "text": "Taxen:  Jahre",
+        "checked": true
+      },
+      {
+        "_id": "514ddaa1-c41a-4629-9c71-4900c4a7597d",
+        "text": "Mietwagen:  Jahre",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Verlängert sich die Taxi- und Mietwagen Genehmigung nach Ablauf von selbst?",
+    "answers": [
+      {
+        "_id": "69e64f04-7e25-4553-8333-5434d6d7eacc",
+        "text": "Nein, ein Antrag muss gestellt werden.",
+        "checked": true
+      },
+      {
+        "_id": "8b6723b4-135f-4b3a-b238-5551b00e82a1",
+        "text": " Monate vor Ablauf muss ein Antrag auf Wiedererteilung gestellt werden.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Für wie lange wird eine Taxi- und Mietwagen Genehmigung bei Verlängerung gewährt? ",
+    "answers": [
+      {
+        "_id": "0e09a15d-5bd1-4437-a193-15c6353abe49",
+        "text": " Jahre",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Für welches Gebiet/Region wird die Genehmigung beantragt?",
+    "answers": [
+      {
+        "_id": "4d8a2f09-9eab-4703-9beb-9a8683de0338",
+        "text": "Nur für das Gebiet der Betriebssitzgemeinde.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was müssen Sie tun, um eine Genehmigung zu erlangen?",
+    "answers": [
+      {
+        "_id": "64ea1877-4671-4723-99fb-467e8aa5013d",
+        "text": "Sie müssen bei der zuständigen Genehmigungsbehörde einen Antrag stellen.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Durch welche Stellen/Unterlagen wird die persönliche Zuverlässigkeit des Unternehmers bei dem Genehmigungsverfahren geprüft?",
+    "answers": [
+      {
+        "_id": "07f4142f-2c0b-40ef-b712-efd8b7749bdb",
+        "text": "Gewerbezentralregister (GZR), Auszug aus dem Handelsregister",
+        "checked": true
+      },
+      {
+        "_id": "1e729667-58da-4ea1-969b-b9d9347bf4cc",
+        "text": "Stadtverwaltung/Gemeinde, polizeiliches Führungszeugnis",
+        "checked": true
+      },
+      {
+        "_id": "879f07e6-77e1-4c0d-a043-592ca1aba18c",
+        "text": "Berufsgenossenschaft für Transport und Verkehrswirtschaft",
+        "checked": true
+      },
+      {
+        "_id": "0b9912d3-520b-412f-a789-46badbc3d0b3",
+        "text": "Bescheinigung der Krankenkasse",
+        "checked": true
+      },
+      {
+        "_id": "1c280ec0-08ec-4ad9-a85f-fbde4ef42ade",
+        "text": "Bescheinigung des Finanzamtes, Amtsgericht, Insolvenzgericht",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Durch welche Stellen/Unterlagen wird die persönliche Zuverlässigkeit des Unternehmers bei dem Genehmigungsverfahren nicht geprüft?",
+    "answers": [
+      {
+        "_id": "1cb63621-25e4-465b-81d9-92353063693b",
+        "text": "Stadtverwaltung/Gemeinde",
+        "checked": true
+      },
+      {
+        "_id": "64314dca-654e-41fc-b13a-9ed8c91cfb97",
+        "text": "Bescheinigung der Krankenkasse",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Sie wollen Ihren Taxibetrieb erweitern. Wie gehen Sie vor?",
+    "answers": [
+      {
+        "_id": "faea659c-890c-4d6f-8931-3519e3781b73",
+        "text": "Ich stelle bei der Genehmigungsbehörde einen Antrag auf Erteilung einer weiteren Genehmigung.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Welche Grundvoraussetzungen sind für die Konzessionsgenehmigung zu erfüllen?",
+    "answers": [
+      {
+        "_id": "690584a2-610c-44d5-a0ff-cf8ab01cc105",
+        "text": "Fachliche Eignung",
+        "checked": true
+      },
+      {
+        "_id": "0e5f9914-7406-4480-81e5-7c6f6ad455e2",
+        "text": "Persönliche Zuverlässigkeit",
+        "checked": true
+      },
+      {
+        "_id": "ea0ced78-0f62-4474-b8a6-bf4aecd9358a",
+        "text": "Finanzielle Leistungsfähigkeit",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was soll der Antrag für die Taxi- oder Mietwagengenehmigung enthalten?",
+    "answers": []
+  },
+  {
+    "question": "Was wird in der Verkehrsunternehmensdatei geführt?",
+    "answers": [
+      {
+        "_id": "d46b9089-1bc6-494a-8c0e-ad6b6b3b76fc",
+        "text": "Alle im Inland niedergelassenen Unternehmen des gewerblichen Güterverkehrs und des gewerblichen Personenverkehrs mit Kraftomnibussen.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Welche Voraussetzungen müssen durch den Unternehmer erfüllt sein, damit eine Genehmigung für den Taxi- und Mietwagenverkehr erteilt werden kann? ",
+    "answers": [
+      {
+        "_id": "5550546a-6763-47b3-905f-b9e33ddae225",
+        "text": "Die Sicherheit und die Leistungsfähigkeit des Betriebs muss gewährleistet sein.",
+        "checked": true
+      },
+      {
+        "_id": "f01381b0-3835-4138-b8ba-ab201cbb3a3a",
+        "text": "Es dürfen keine Tatsachen vorliegen, die die Unzuverlässigkeit des Antragstellers als Unternehmer oder der für die Führung der Geschäfte bestellten Personen dartun.",
+        "checked": true
+      },
+      {
+        "_id": "123b04df-c4e4-4276-ab3c-d9a0d4e4647d",
+        "text": "Der Antragsteller als Unternehmer oder die für die Führung der Geschäfte bestellte Person muss fachlich geeignet sein.",
+        "checked": true
+      },
+      {
+        "_id": "d0ab5760-1de3-4e4c-9a3a-9655e9c610e8",
+        "text": "Betriebssitz im Inland.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Wie wird die &quot;fachliche Eignung&quot; festgestellt?   ",
+    "answers": [
+      {
+        "_id": "fc78be1a-969d-49b5-b7c4-79c6484edfa2",
+        "text": "Durch Ablegen der Fachkundeprüfung bei der Industrieund Handelskammer.",
+        "checked": true
+      },
+      {
+        "_id": "83253016-b619-4013-9b51-861baff054c8",
+        "text": "Durch die Befreiungen z.B. durch Nachweis einer langjährigen leitenden Tätigkeit in einem Personenverkehrsunternehmen.  ",
+        "checked": true
+      },
+      {
+        "_id": "4be2df16-0863-4611-bf92-d76a753cb638",
+        "text": "Durch die Befreiungen, durch z.B. eine bestandene Abschlussprüfung in diversen Ausbildungsberufen oder Studiengängen.  ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Welche persönlichen Voraussetzungen müssen erfüllt sein, damit eine Genehmigung für den Taxi- oder Mietwagenverkehr erteilt werden kann?",
+    "answers": [
+      {
+        "_id": "a384d697-968b-490f-8283-5995a07021d4",
+        "text": "Die persönliche Zuverlässigkeit.  ",
+        "checked": true
+      },
+      {
+        "_id": "eba4d995-71b5-4fe6-8919-4a46be28ab9a",
+        "text": "Die fachliche Eignung. (Fachkundenachweis)   ",
+        "checked": true
+      },
+      {
+        "_id": "29c162c6-64bf-4e4d-917e-c14ec88fa8ce",
+        "text": "Die wirtschaftliche und finanzielle Leistungsfähigkeit des Betriebes.  ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Wie wird die finanzielle Leistungsfähigkeit eines Betriebes nachgewiesen werden?",
+    "answers": [
+      {
+        "_id": "a0f03a4d-40b7-4e9f-b971-56f04611759f",
+        "text": "Bestätigung der Bank.  ",
+        "checked": true
+      },
+      {
+        "_id": "3e455ae4-65c5-4413-8344-4e0747116fdd",
+        "text": "Bestätigung eines Steuerberaters. ",
+        "checked": true
+      },
+      {
+        "_id": "c45cf61c-7018-4979-97f8-1d2c7b70fc1f",
+        "text": "Bestätigung durch einen Kontoauszug. ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Wie wird die &quot;persönliche Zuverlässigkeit&quot; festgestellt? ",
+    "answers": [
+      {
+        "_id": "05e4faf7-e6cf-4ed1-907b-cdd23060f927",
+        "text": "Durch den Nachweis des polizeilichen Führungszeugnisses. ",
+        "checked": true
+      },
+      {
+        "_id": "5edc5760-f327-4ffc-bc35-4c5b71c6e480",
+        "text": "Durch den Nachweis des Auszuges aus Gewerbezentralregister. ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Welche Beträge sind bei der Prüfung der wirtschaftlichen und finanziellen Leistungsfähigkeit des Betriebes nachzuweisen? ",
+    "answers": [
+      {
+        "_id": "f6cf6fba-14bb-4300-88f1-8679ada0eb5f",
+        "text": "Eigenmittel von .,€ für das erste Fahrzeug.",
+        "checked": true
+      },
+      {
+        "_id": "319180ee-805f-47ab-8f71-dd334b582526",
+        "text": "Eigenmittel von .,€ für jedes weitere Fahrzeug.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Durch welche Personen unabhängige Voraussetzung kann die Genehmigung im Verkehr mit Taxen versagt werden? ",
+    "answers": [
+      {
+        "_id": "e80f0511-3dd6-497a-96ab-87887c1e1ac6",
+        "text": "Durch die Ausübung des beantragten Verkehrs darf das örtliche Taxigewerbe in seiner Funktionsfähigkeit nicht bedroht werden.   ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was führt zu einem möglichen Verlust der Konzession?",
+    "answers": [
+      {
+        "_id": "cfefc177-533a-4670-b117-095e94d4434b",
+        "text": "Keine Unbedenklichkeitsbescheinigung durch offene Zahlungen beim Finanzamt.  ",
+        "checked": true
+      },
+      {
+        "_id": "0989f8d0-bc02-4af8-956a-9e9b9d039682",
+        "text": "Datum der Verlängerung verpasst.",
+        "checked": true
+      },
+      {
+        "_id": "2a393c55-af21-454c-9810-d2a79e61f242",
+        "text": "Kein zugelassenes Fahrzeug. ( Monate) ",
+        "checked": true
+      },
+      {
+        "_id": "11485bcd-6266-437b-906e-e13ca748932f",
+        "text": "Ab  Beschwerden im Jahr.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Welche Unterlagen benötigt die Genehmigungsbehörde bei einem Antrag auf Erteilung einer weiteren Genehmigung?  ",
+    "answers": [
+      {
+        "_id": "80905d06-7f5d-4420-bcbe-f37ecf1a1acf",
+        "text": "Auszug aus dem Handelsregister und dem Gewerbezentralregister.  ",
+        "checked": true
+      },
+      {
+        "_id": "f9df709f-d360-409f-9b62-8d58be068cc4",
+        "text": "Führungszeugnis ",
+        "checked": true
+      },
+      {
+        "_id": "36504609-91d2-41ec-8db2-66d665d74166",
+        "text": "Vermögensübersicht  ",
+        "checked": true
+      },
+      {
+        "_id": "c0fd2e06-5102-4275-a32d-d2837cb56f2e",
+        "text": "Unbedenklichkeitsbescheinigung des Sozialversicherungsträgers, des Finanzamtes und der Stadtoder Gemeindekasse. ",
+        "checked": true
+      },
+      {
+        "_id": "1debd3dc-8a6e-420b-855b-3d3270bf8b4f",
+        "text": "Unbedenklichkeitsbescheinigung der Berufsgenossenschaft für Fahrzeughaltungen.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Wie wird die finanzielle Leistungsfähigkeit festgestellt? ",
+    "answers": [
+      {
+        "_id": "b23bb8ad-3548-4a9b-92ef-2d14f801c696",
+        "text": "Durch eine Eigenkapitalbescheinigung einer Bank von .,€ für ein Fahrzeug.  ",
+        "checked": true
+      },
+      {
+        "_id": "82a9d43a-4d60-4b96-8b87-d250f1c2e6c0",
+        "text": "Durch die Unbedenklichkeitsbescheinigung. (Finanzamt, Berufsgenossenschaft, Sozialversicherungsträger)",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Wozu dient der &quot;Beobachtungszeitraum&quot; im Verkehr mit Taxen? ",
+    "answers": [
+      {
+        "_id": "dc5de300-64dd-4378-89a7-e07e047dd6e4",
+        "text": "Er dient zur Feststellung der Auswirkungen früher erteilter Genehmigungen auf die öffentlichen Verkehrsinteressen.",
+        "checked": true
+      },
+      {
+        "_id": "6760f398-22d7-4595-a85a-e299a85660b4",
+        "text": "Abfrage der wirtschaftlichen Funktionsfähigkeit. ",
+        "checked": true
+      },
+      {
+        "_id": "071d1a9f-fc0a-4d58-a1d5-d9b90da5e76b",
+        "text": "Abfrage der Taxidichte.",
+        "checked": true
+      },
+      {
+        "_id": "210eed94-0c91-4985-b0e7-30aee5431842",
+        "text": "Abfrage der Kundennachfrage. ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Welche vom Unternehmer unabhängigen Voraussetzungen müssen für die Genehmigung im Verkehr mit Taxen gegeben sein? ",
+    "answers": [
+      {
+        "_id": "56af6e61-2794-4aab-8e80-5af3c7f1b625",
+        "text": "Die Taxidichte darf nicht zu hoch sein.  ",
+        "checked": true
+      },
+      {
+        "_id": "47c2d2da-ecf2-4691-85d2-cfb52a6b119b",
+        "text": "Es darf keine Beeinträchtigung bei der Ertragsund Kostenlage unter Einbeziehung der Einsatzzeit geben.",
+        "checked": true
+      },
+      {
+        "_id": "c70699bb-2ef4-4360-a57c-5f384b6094ef",
+        "text": "Es darf keine Beeinträchtigung der Anzahl und Ursachen der Geschäftsaufgaben geben.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was wird im &quot;Beobachtungszeitraum&quot; beim Verkehr mit Taxen ermittelt?",
+    "answers": [
+      {
+        "_id": "1f3c75d2-acd2-41b3-8b46-19a7172925af",
+        "text": "Die Entwicklung der Ertragsund Kostenlage unter Einbeziehung der Einsatzzeit.",
+        "checked": true
+      },
+      {
+        "_id": "924524ea-3dcc-4b42-8ab1-2ded6f6c3866",
+        "text": "Die Anzahl und Ursachen der Geschäftsaufgaben. ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Welche Einflüsse spielen bei der Genehmigung im örtlichen Taxigewerbe eine große Rolle, um die Funktionsfähigkeit nicht zu bedrohen?",
+    "answers": [
+      {
+        "_id": "608a4c29-a8d8-456e-ab76-79c2d5edea68",
+        "text": "Die Nachfrage nach Beförderungsaufträgen im Taxiverkehr. ",
+        "checked": true
+      },
+      {
+        "_id": "ce52fbac-ffb4-45e9-95f2-993081e94262",
+        "text": "Die Taxidichte. ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Wie lange dauert der Beobachtungszeitraum an?  ",
+    "answers": [
+      {
+        "_id": "a1c56eea-80da-44fd-9d91-a1b93cf0c29e",
+        "text": " Jahr",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Ein Unternehmer wechselt von einer Kleinstadt in eine naheliegende Großstadt. Was muss er bezüglich seiner Genehmigung und den Fahrzeugen veranlassen?",
+    "answers": [
+      {
+        "_id": "bb37be86-a437-4c81-85ca-4abeb33bb3cf",
+        "text": "Er darf seine Tätigkeit nicht mehr weiterführen, er muss eine Konzession beantragen.",
+        "checked": true
+      },
+      {
+        "_id": "fbbef2aa-b3dd-4716-9479-bea8f9216e70",
+        "text": "Er muss die Fahrzeuge ummelden. ",
+        "checked": true
+      },
+      {
+        "_id": "dac3b170-f3f6-4ebc-89fb-847ebf1f03a3",
+        "text": "Die Gewerbesteuer würde sich ändern. ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was sind die wesentlichen Inhalte der Genehmigungsurkunde? ",
+    "answers": [
+      {
+        "_id": "6034dbc7-635c-43ef-90cb-b5f3fd4aa4f4",
+        "text": "Name, Wohnund Betriebssitz des Unternehmers. ",
+        "checked": true
+      },
+      {
+        "_id": "6016b541-b72c-43d7-884e-e4fbb277c147",
+        "text": "Bezeichnung der Verkehrsart und Verkehrsform. ",
+        "checked": true
+      },
+      {
+        "_id": "a4d84710-58ee-4ea1-9976-3a8f54a317dd",
+        "text": "Geltungsdauer der Genehmigung.",
+        "checked": true
+      },
+      {
+        "_id": "d9057f7a-446c-47c8-9a43-e1f634f2242c",
+        "text": "Die amtlichen Kennzeichen der einzusetzenden Kraftfahrzeuge.  ",
+        "checked": true
+      },
+      {
+        "_id": "e887b324-6e89-4d23-a678-77e18d17b344",
+        "text": "Hersteller, FabrikNr. und Zahl der Sitzplätze.   ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was muss hinsichtlich der Genehmigungsurkunde im Straßenverkehr besonders beachtet werden?",
+    "answers": [
+      {
+        "_id": "5beeadec-74a7-43c3-ad20-364e64fd0e7c",
+        "text": "Die Genehmigungsurkunde oder eine gekürzte amtliche Ausfertigung (Konzessionsauszug) oder eine beglaubigte Kopie der Gemeinschaftslizenz ist während der Fahrt mitzuführen und auf Verlangen den zuständigen Personen zur Prüfung auszuhändigen.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Wer darf ein Taxi- oder Mietwagenunternehmen führen?",
+    "answers": [
+      {
+        "_id": "e5ae6f52-41e1-44d2-b614-6edc6cb7ffe8",
+        "text": "Jeder der eine Genehmigungsurkunde hat.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Muss das Auto zuerst zugelassen werden, damit man die Genehmigungsurkunde erhält? ",
+    "answers": [
+      {
+        "_id": "0894f68e-91e5-4186-aa28-f8bff3137956",
+        "text": "Ja",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Wann benötige ich die originale Genehmigungsurkunde?",
+    "answers": [
+      {
+        "_id": "2188f11e-c7e2-4caa-9132-5875af4ea8b6",
+        "text": "Umzug ",
+        "checked": true
+      },
+      {
+        "_id": "ba0c8750-8cfc-4609-b417-3d8517fcb322",
+        "text": "Verlängerung ",
+        "checked": true
+      },
+      {
+        "_id": "43f2131b-0788-42fd-b61a-627a3b1ea802",
+        "text": "Wechsel des Fahrzeuges ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was ist ein &quot;Konzessionsauszug&quot;?",
+    "answers": [
+      {
+        "_id": "3ad46fe1-6893-4000-b87e-6be2a25f7507",
+        "text": "Eine amtliche Ausfertigung, dass Ihr Fahrzeug eine Genehmigung zur Fahrgastbeförderung hat.",
+        "checked": true
+      },
+      {
+        "_id": "890a3f8a-9feb-42d9-96fc-5e81066c6ae8",
+        "text": "Ein Auszug der Genehmigungsurkunde. ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Welche Bedeutung hat ein Auszug aus der Genehmigung?  ",
+    "answers": [
+      {
+        "_id": "849717c0-075e-4fe6-b12a-f0d832624869",
+        "text": "Neben der Genehmigungsurkunde erhält jeder Unternehmer für jedes Fahrzeug einen Auszug aus der Genehmigungsurkunde (Konzessionsauszug), der stets während der Fahrt mitzuführen ist.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Wo sollte der Auszug aus der Genehmigungsurkunde aufbewahrt werden?  ",
+    "answers": [
+      {
+        "_id": "588282c9-8f95-4b29-a128-4543fde15dd3",
+        "text": "Sie muss während der Fahrt mitgeführt werden. ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Darf eine Genehmigung für den Taxiverkehr und für den Mietwagenverkehr für denselben Personenkraftwagen erteilt werden?  ",
+    "answers": []
+  },
+  {
+    "question": "Welche Aussage ist richtig?",
+    "answers": [
+      {
+        "_id": "ae80159a-ba49-41b0-8e9e-d95bdd76c14f",
+        "text": "Wenn der Ort des Betriebssitzes weniger als . Einwohner hat, darf eine Genehmigung für den Taxenverkehr und für den Mietwagenverkehr für den selben Personenkraftwagen erteilt werden.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Wann darf eine Genehmigung für den Taxiverkehr und den Mietwagenverkehr nicht für denselben Personenkraftwagen erteilt werden?",
+    "answers": [
+      {
+        "_id": "89c3836c-414c-4b73-81de-d294bb6fd9dc",
+        "text": "In Orten mit mehr als   Einwohnern. ",
+        "checked": true
+      },
+      {
+        "_id": "026b357d-e417-45fc-87f2-eb584aef3415",
+        "text": "Es können von der höheren Verwaltungsbehörde Orte bestimmt sein, in welchen auch bei unter . Einwohnern die Genehmigung für den Taxiverkehr und den Mietwagenverkehr für denselben Personenkraftwagen nicht erteilt werden.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was führt zum Widerruf der Genehmigung?  ",
+    "answers": [
+      {
+        "_id": "2df191b2-f37f-43f9-875d-71e6a7901ada",
+        "text": "wenn die Sicherheit und Leistungsfähigkeit des Betriebes oder die Zuverlässigkeit nicht mehr gegeben ist.",
+        "checked": true
+      },
+      {
+        "_id": "688b980d-d413-4de6-9886-d06de38c4e4e",
+        "text": "Bei Nichterfüllung der Betriebspflicht. ",
+        "checked": true
+      },
+      {
+        "_id": "ae8cf7c4-779d-4d99-93ff-9db52d5825f7",
+        "text": "Missachten der Verkehrssicherheit dienenden Vorschriften",
+        "checked": true
+      },
+      {
+        "_id": "a1d2bd92-4d37-425a-9eb2-f777c9cbbc7f",
+        "text": "Durch Verstoßen der arbeitsrechtlichen, sozialrechtlichen oder steuerrechtlichen Verpflichtungen.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Unter welcher Voraussetzungen wird im Taxi- und Mietwagenverkehr die Genehmigung verlängert?",
+    "answers": [
+      {
+        "_id": "7a0a8c00-af56-43fd-8324-c9f72a884017",
+        "text": "Durch die vom Unternehmer erbrachten steuerrechtlichen Verpflichtungen. ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "In welchen Fällen der Betriebsveränderung wird eine Genehmigung durch die Genehmigungsbehörde benötigt?  ",
+    "answers": [
+      {
+        "_id": "cfa0e7cd-affd-49e7-96a2-5125c044601a",
+        "text": "Durch Neuzulassung eines Taxis oder Mietwagens. ",
+        "checked": true
+      },
+      {
+        "_id": "a5e6ec9d-ccf8-4f70-ba49-4e96a0fbb922",
+        "text": "Bei Übertragung der Befugnis der Betriebsführung. ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was passiert bei der Übertragung einer Genehmigung? ",
+    "answers": [
+      {
+        "_id": "033ce0c4-8ac2-49f2-9798-4eb625e1945e",
+        "text": "Die Betriebsführung wird auf eine andere Person übertragen. (mit Konzession etc.)",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was prüft die Genehmigungsbehörde hinsichtlich des neuen Unternehmers bei Übertragung einer Genehmigung? ",
+    "answers": [
+      {
+        "_id": "c755e4ce-4be5-4080-9288-dc0f0544801d",
+        "text": "Die Zuverlässigkeit und fachliche Eignung des Antragstellers und die Sicherheit und Leistungsfähigkeit des Betriebs.  ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was geschieht im Falle des Todes des Genehmigungsinhabers? ",
+    "answers": [
+      {
+        "_id": "294bf79c-921e-4be9-9095-50c3098d40a2",
+        "text": "Der Erbe kann den Betrieb vorläufig weiterführen oder diese Befugnis auf einen Dritten übertragen.",
+        "checked": true
+      },
+      {
+        "_id": "604516fd-3c45-45e0-b267-a299d7b946e3",
+        "text": "Die Befugnis erlischt, wenn nicht der Erbe oder der Dritte binnen drei Monaten nach Ablauf der für die Ausschlagung der Erbschaft vorgesehenen Frist beantragt hat.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Wie lange hat ein Erbe von Taxen Zeit alle Voraussetzungen für die Übernahme zu erfüllen?  ",
+    "answers": [
+      {
+        "_id": "3ed5512c-949a-45df-9f17-dff72fe767c1",
+        "text": " Monate",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Welche Bestimmungen gelten im Pflichtfahrgebiet?",
+    "answers": [
+      {
+        "_id": "31fb5e91-74d8-444c-b655-b78fcb378320",
+        "text": "Betriebspflicht",
+        "checked": true
+      },
+      {
+        "_id": "ec1db33a-12ec-4d6d-b15b-d001d725b011",
+        "text": "Beförderungspflicht",
+        "checked": true
+      },
+      {
+        "_id": "05568eea-3341-40de-bb79-a68d8cf807dc",
+        "text": "Tarifpflicht",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was verstehen Sie unter Betriebspflicht?",
+    "answers": []
+  },
+  {
+    "question": "Ist ein Taxiunternehmer verpflichtet, seinen Taxibetrieb zu führen? ",
+    "answers": [
+      {
+        "_id": "2aeb1adb-ccf1-4c5b-9572-42e4c56ba92e",
+        "text": "Ja, es besteht Betriebspflicht. ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Wie lange kann eine Betriebspflichtbefreiung genehmigt werden? ",
+    "answers": [
+      {
+        "_id": "fb007e7a-ebda-45f7-8cde-9978bbc9bcf4",
+        "text": " Monate",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Kann die Genehmigungsbehörde den Taxiunternehmer zu einer bestimmten Zeit, an einem bestimmten Taxistandplatz zum Dienst verpflichten? ",
+    "answers": [
+      {
+        "_id": "b4f9a284-f52a-48f8-be65-fe72ca1cdeb0",
+        "text": "Ja",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Nennen Sie einen Grund warum die Genehmigungsbehörde den Taxiunternehmer zu einer bestimmten Zeit, an einem bestimmten Taxistandplatz zum Dienst verpflichten sollte?",
+    "answers": [
+      {
+        "_id": "ae9cbae7-9b30-4aef-859f-02062e9ca642",
+        "text": "Damit zu Spitzenverkehrszeiten, die Bereitstellung von einer ausreichenden Anzahl von Taxen, gewährleistet werden kann. ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was verstehen Sie unter Beförderungspflicht?",
+    "answers": []
+  },
+  {
+    "question": "Wann unterliegt der Taxifahrer nicht der &quot;Beförderungspflicht&quot;? ",
+    "answers": [
+      {
+        "_id": "289d2cd5-fdd2-4f0e-99b9-0ac10b7b94a6",
+        "text": "Bei Fahrten außerhalb des Pflichtfahrgebiets.",
+        "checked": true
+      },
+      {
+        "_id": "4e6bf3cb-86d8-4e66-9736-3d6e4edfbad4",
+        "text": "Personen, die unter erheblichem Einfluss alkoholischer Getränke oder berauschender Mittel stehen.",
+        "checked": true
+      },
+      {
+        "_id": "03962811-3d0e-482e-92a5-ca23432a95cf",
+        "text": "Personen mit ansteckenden Krankheiten. ",
+        "checked": true
+      },
+      {
+        "_id": "acdef557-fe58-424b-9b60-1e38f04ccc4b",
+        "text": "Gepäck und Tiere können von der Beförderung ausgeschlossen werden, wenn durch ihre Mitnahme Gefahren oder Belästigungen zu befürchten sind.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "In welchen Fällen unterliegt der Unternehmer nicht der Beförderungspflicht?",
+    "answers": [
+      {
+        "_id": "f4e2266b-b03e-44f0-9596-64901fea2019",
+        "text": "Wenn die Beförderungsbedingungen nicht eingehalten werden. ",
+        "checked": true
+      },
+      {
+        "_id": "75728694-3ef4-4904-a860-b3735a358a48",
+        "text": "Wenn die Beförderung mit dem Beförderungsmittel nicht möglich ist. ",
+        "checked": true
+      },
+      {
+        "_id": "1d46fac3-3fcb-43c1-a55b-f08620e46556",
+        "text": "Wenn die Beförderung durch Umstände, die der Unternehmer nicht abwenden kann, verhindert wird.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Besteht Beförderungspflicht, wenn die Beförderung durch Umstände, die der Unternehmer nicht abwenden kann, verhindert wird? ",
+    "answers": [
+      {
+        "_id": "4082ba94-5446-4c73-93fe-5e8ddb049361",
+        "text": "Nein",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was verstehen Sie unter Tarifpflicht?",
+    "answers": []
+  },
+  {
+    "question": "Die Tarifpflicht gilt nur bei Beförderunggen im Pflichtfahrbereich. Was gilt denn bei Fahrten darüber hinaus?   ",
+    "answers": []
+  },
+  {
+    "question": "Was versteht man unter dem Betreibssitz eines Taxi- oder Mietwagenunternehmens?",
+    "answers": []
+  },
+  {
+    "question": "Welchen Pflichten unterliegen Sie nicht, außerhalb des Pflichtfahrbereichs im Taxiverkehr?",
+    "answers": [
+      {
+        "_id": "de011656-4920-4ad5-8aa8-3315411548e3",
+        "text": "Betriebspflicht",
+        "checked": true
+      },
+      {
+        "_id": "52a0dc94-1ae5-4e09-bacf-5bdbde0eec33",
+        "text": "Beförderungspflicht",
+        "checked": true
+      },
+      {
+        "_id": "fa300831-2555-4e7f-8d6a-e1fc6a32042d",
+        "text": "Tarifpflicht",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Welche Besonderheiten müssen im Pflichtfahrgebiet eingehalten werden? ",
+    "answers": [
+      {
+        "_id": "92a807f8-4627-4bd9-a655-71c8bfff4a6c",
+        "text": "Beförderungspflicht",
+        "checked": true
+      },
+      {
+        "_id": "55c610fb-8eaf-4364-9a3f-99d54278168a",
+        "text": "Tarifpflicht",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was ist die Fürsorgepflicht, welche der Taxi- und Mietwagenfahrer einzuhalten hat?",
+    "answers": [
+      {
+        "_id": "061417b7-ab83-490b-a187-748aee5d71ac",
+        "text": "Bei der Beförderung muss ich sicherstellen, dass der Fahrgast dort hinkommt, wo er hin möchte.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was passiert bei Verstoß der Fürsorgepflicht?  ",
+    "answers": [
+      {
+        "_id": "4fc40bc2-02cf-4600-b3f3-91c5f09fbfbb",
+        "text": "Ein Eintrag ins polizeiliche Führungszeugnis. ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Welche der Beispiele ist ein Verstoß gegen die Fürsorgepflicht? ",
+    "answers": [
+      {
+        "_id": "26175cb3-d560-4fe1-9f46-c76206b343ee",
+        "text": "Eine ältere Dame, welche nicht gut zu Fuß ist, mitten in der Nacht am Gehsteig aussetzen, weil sie ständig am Radio trotz mehrfacher Ermahnung herumdrückte. Direkt im Anschluss haben Sie die Funkzentrale über den Vorfall informiert.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was verstehen Sie unter Rückkehrpflicht?",
+    "answers": []
+  },
+  {
+    "question": "Was verstehen Sie unter Aufzeichnungspflicht (Aufbewahrungspflicht)? ",
+    "answers": []
+  },
+  {
+    "question": "Was bedeutet &quot;bereithalten&quot;?   ",
+    "answers": [
+      {
+        "_id": "87e71a2f-d979-44d1-b68d-1f28326ddf72",
+        "text": "Sobald der Fahrzeugführer im Auto sitzt. (auf einen Fahrgast wartet) ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was bedeutet &quot;bereitstellen&quot;?",
+    "answers": [
+      {
+        "_id": "cdb793db-992d-48a6-9c7e-36a651179d38",
+        "text": "Zur Verfügung stehen. Sobald das Taxi am Taxistandplatz steht. ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Nennen Sie die charakteristischen Merkmale eines Taxenverkehrs?  ",
+    "answers": [
+      {
+        "_id": "700c46b5-6a06-4eb1-b5b4-84ca6bf5e1fb",
+        "text": "Personbeförderung mit Personenkraftwagen durchgeführt wird, ",
+        "checked": true
+      },
+      {
+        "_id": "fbf04ddd-3ea3-461e-bc9a-1e6829d95e17",
+        "text": "die Personenkrafwagen von Taxiunternehmern entweder an behördlich zugelassenen Stellen bereitgehalten werden ",
+        "checked": true
+      },
+      {
+        "_id": "1af02b51-67fd-4fb4-8a65-e8a7461b921a",
+        "text": "die Beförderungsaufträge während einer Fahrt oder am Betriebssitz entgegengenommen worden sind",
+        "checked": true
+      },
+      {
+        "_id": "a2a9d75f-db77-4988-859e-d8d00410a6d9",
+        "text": "Fahrten durchgeführt werden, deren Ziel der Fahrgast bestimmt. ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Wie beschreibt das Gesetz den Verkehr mit Mietwagen?",
+    "answers": [
+      {
+        "_id": "f0f31844-2e9e-4c8d-ba4d-5ecd78b25bc6",
+        "text": "Personbeförderung mit Personenkraftwagen durchgeführt wird, ",
+        "checked": true
+      },
+      {
+        "_id": "b46cd4b8-ac95-418d-b981-49d415326c73",
+        "text": "wobei die Personenkrafwagen nur &quot;im Ganzen&quot; gemietet worden sind",
+        "checked": true
+      },
+      {
+        "_id": "b819d7ea-69df-43f7-ae24-03da3bb6fcf5",
+        "text": "die Beförderungsaufträge dazu am Betriebssitz oder in der Wohnung des Unternehmers entgegengenommen worden sind    ",
+        "checked": true
+      },
+      {
+        "_id": "8dc44c8f-aff2-48c5-a79a-1f95d900a96a",
+        "text": "damit Fahrten durchgeführt werden, deren Zweck, Ziel und Ablauf der Fahrgast bestimmt",
+        "checked": true
+      },
+      {
+        "_id": "afe09eda-4c50-46e9-bd2a-7584bb39744c",
+        "text": "und kein Taxiverkehr vorliegt.  ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was versteht man unter Pflichtfahrbereich und welche Bedeutung hat er im Rahmen der Taxi-Hauptflichten? ",
+    "answers": []
+  }
+]
