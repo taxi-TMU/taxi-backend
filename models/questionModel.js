@@ -4,7 +4,7 @@ const Schema = mongoose.Schema
 const ObjectId = mongoose.Schema.Types.ObjectId;
 
 const questionSchema = new Schema({
-    language: String,
+    language: { type: String, min: 2, max: 2, required: true },
     question_text: String,
     sub_category: { type: ObjectId, ref: 'SubCategory', required: true },
     answers: Array, // TODO subschema?
