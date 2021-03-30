@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>Poke API</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <h1>TMU App</h1>
+
+
+    <h3><small color="#ff0">ENDPOINTS USER:</small></h3>
+    <p><span style="color: green">GET</span> all</p>
+    <a href="#">
+        <code style="background-color: #f2ecf5; color: #c63dfc">.../api/v1/user</code>
+    </a>
+    <br/>
+    <br/>
+    <p><span style="color: green">GET</span> one by id</p>
+    <a href="#/:id">
+        <code style="background-color: #f2ecf5; color: #c63dfc">.../api/v1/user/:id</code>
+    </a>
+
+    <p><span style="color: red">POST</span> post </p>
+    <a href="#/:id">
+        <code style="background-color: #f2ecf5; color: #c63dfc">.../api/v1/user/</code>
+    </a>
+    <p>Fields</p>
+    <ul>
+      <li>
+        <strong>first_name</strong>
+         | string | required | min:2 | max: 50
+      </li>
+      <li>
+        <strong>last_name</strong>
+         | string | required | min:2 | max: 50
+      </li>
+      <li>
+        <strong>email</strong>
+         | string | required | min:5 | max: 50
+      </li>
+      <li>
+        <strong>password</strong>
+         | string | required | min:8 | max: 100
+      </li>
+    </ul>
+    <hr class="m-5">
+
+
+</body>
+
+</html>
