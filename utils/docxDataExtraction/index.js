@@ -35,24 +35,24 @@ try {
 
 
            
-                //  const newQuestion = new Question({ 
-                //                 language: "DE", question_text: question, answers
-                //             })
+                 const newQuestion = new Question({ 
+                    language: "DE", question_text: question, answers
+                })
  
 
-                //  const insertQuestion = async () => {
-                //         try {
-                //             // const questionCreated = await db.Question.create({ 
-                //             //     language, question_text
-                //             // })
+                 const insertQuestion = async () => {
+                    try {
+                        const questionCreated = await Question.create({ 
+                            language: "DE", question_text: question, answers, sub_category: "60632780fb8a6a0004ee860e"
+                        })
 
-                //             console.log(questionCreated)
-                //           } catch (e) {
-                //             console.log(`jooooo: ${e.message}`)
-                //           }
-                //     }
+                        console.log(questionCreated)
+                        } catch (e) {
+                        console.log(`jooooo: ${e.message}`)
+                        }
+                    }
 
-                //     insertQuestion();
+                    insertQuestion();
 
 
                     questionsAndAnswers.push({
