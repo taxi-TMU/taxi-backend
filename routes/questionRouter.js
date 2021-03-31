@@ -1,16 +1,20 @@
 const express = require("express");
 const router = express.Router();
 
-const questionController = require('../controllers/questionController');
+const {
+    get_all,
+    get_by_id,
+    create,
+    update
+} = require('../controllers/questionController');
 
-
-// ----------------------------------------------------------- >> GET:QUESTIONS
-router.get("/", questionController.get_questions);
-// -------------------------------------------------------- >> GET:QUESTIONS:ID
-router.get("/:id", questionController.get_question);
-// ---------------------------------------------------------- >> POST:QUESTIONS
-router.post("/", questionController.create_question);
-// -------------------------------------------------------- >> PUT:QUESTIONS:ID
-// router.put("/:id", questionController.update_question);
+// --------------------------------------------------------------------- >> GET
+router.get("/", get_all);
+// ------------------------------------------------------------------ >> GET:ID
+router.get("/:id", get_by_id);
+// -------------------------------------------------------------------- >> POST
+router.post("/", create);
+// ------------------------------------------------------------------ >> PUT:ID
+router.put("/:id", update);
 
 module.exports = router;

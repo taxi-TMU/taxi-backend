@@ -78,7 +78,7 @@
     <ul>
       <li>
         <strong>name</strong>
-         | String | required | unique | min:2 | max: 50
+         | String | unique | min:2 | max: 50
       </li>
     </ul>
 
@@ -123,11 +123,11 @@
     <ul>
       <li>
         <strong>name</strong>
-         | String | required | unique | min:2 | max: 50
+         | String | unique | min:2 | max: 50
       </li>
       <li>
         <strong>category</strong>
-         | ObjectId | required
+         | ObjectId 
       </li>
     </ul>
     <hr class="m-5">
@@ -167,6 +167,31 @@
          | Array of ObjectId's
       </li>
     </ul>
+
+    <p><span style="color: blue">PUT</span> <small>FIND BY ID & UPDATE</small> </p>
+    <a href="#">
+        <code style="background-color: #f2ecf5; color: #c63dfc">https://tmu-taxi-api.herokuapp.com/api/v1/question/:id</code>
+    </a>
+    <p><small>FIELDS</small></p>
+    <ul>
+      <li>
+        <strong>language</strong>
+         | String | min:2 | max: 2
+      </li>
+      <li>
+        <strong>question_text</strong>
+         | String | min:2 | max: 500
+      </li>
+      <li>
+        <strong>sub_category</strong>
+         | ObjectId
+      </li>
+      <li>
+        <strong>answers</strong>
+         | Array of ObjectId's
+      </li>
+    </ul>
+
     <hr class="m-5">
 
 

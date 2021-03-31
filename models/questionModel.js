@@ -8,7 +8,6 @@ const questionSchema = new Schema({
     question_text: { type: String, min: 2, max: 500, required: true },
     sub_category: { type: ObjectId, ref: 'SubCategory', required: true },
     answers: Array, // TODO subschema?
-
 })
 console.log("arrived in schema")
 
