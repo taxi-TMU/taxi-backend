@@ -11,7 +11,6 @@ const trainingSchema = new Schema({
     time_start: { type: Date },
     time_end: { type: Date },
     question_set: [{ type: ObjectId, ref: 'Question' }]
-
 })
 
 const Training = mongoose.model('Training', trainingSchema)

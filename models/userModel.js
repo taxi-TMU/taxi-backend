@@ -8,8 +8,8 @@ const userSchema = new Schema({
     last_name: { type: String, min: 2, max: 50, required: true },
     email: { type: String, min: 2, max: 50, required: true, unique: true },
     password: { type: String, min: 2, max: 50, required: true },
-    // created: { type: Date, default: Date.now },
-    last_updated: { type: Date, default: Date.now }
+    last_updated: { type: Date, default: Date.now },
+    // active: { type: Boolean, default: false },
 })
 
 userSchema.methods.createToken = function () {
@@ -22,3 +22,5 @@ userSchema.methods.createToken = function () {
 const User = mongoose.model('User', userSchema)
 
 module.exports = User;
+
+// created: { type: Date, default: Date.now },

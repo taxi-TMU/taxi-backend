@@ -35,12 +35,12 @@ exports.create = async (req, res) => {
   }
 
   try {
-      const created = await Question.create({ 
-          language, question_text, sub_category, answers
-      })
-      res.json(created)
+    const created = await Question.create({ 
+        language, question_text, sub_category, answers
+    })
+    res.json(created)
   } catch (e) {
-      res.status(500).send(e.message)
+    res.status(500).send(e.message)
   }
 };
 

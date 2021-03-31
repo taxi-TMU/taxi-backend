@@ -1,16 +1,16 @@
 const express = require("express");
 const router = express.Router();
 
-const trainingController = require('../controllers/trainingController');
+const {
+    get_all,
+    get_by_id,
+    create,
+    update
+} = require('../controllers/trainingController');
 
-
-// ----------------------------------------------------------- >> GET:TRAININGS
-router.get("/", trainingController.get_trainings);
-// --------------------------------------------------------- >> GET:TRAINING:ID
-router.get("/:id", trainingController.get_training);
-// ----------------------------------------------------------- >> POST:TRAINING
-router.post("/", trainingController.create_training);
-// --------------------------------------------------------- >> PUT:TRAINING:ID
-// router.put("/:id", trainingController.update_training);
+router.get("/", get_all);
+router.get("/:id", get_by_id);
+router.post("/", create);
+router.put("/:id", update);
 
 module.exports = router;
