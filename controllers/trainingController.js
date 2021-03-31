@@ -14,7 +14,7 @@ exports.create_training = async (req, res) => {
 }
 
 
-exports.find_training = async (req, res) => {
+exports.get_training = async (req, res) => {
     const { id } = req.params
     try {
       const target = await Training.findById(id)
@@ -25,7 +25,7 @@ exports.find_training = async (req, res) => {
     }
   }
 
-exports.list_trainings = async (req, res) => {
+exports.get_trainings = async (req, res) => {
     try {
       const allTrainings = await Training.find({})
       res.json(allTrainings)

@@ -2,7 +2,7 @@ const User = require('../models/userModel')
 const bcrypt = require('bcrypt')
 
 // --------------------------------------------------------------- >> GET:USERS
-exports.list_users = async (req, res) => {
+exports.get_users = async (req, res) => {
     try {
       const allUsers = await User.find({})
       res.json(allUsers)
@@ -12,7 +12,7 @@ exports.list_users = async (req, res) => {
 }
 
 // ------------------------------------------------------------- >> GET:USER:ID
-exports.find_user = async (req, res) => {
+exports.get_user = async (req, res) => {
     const { id } = req.params
     try {
       const targetUser = await User.findById(id)

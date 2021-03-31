@@ -5,9 +5,9 @@ const trainingController = require('../controllers/trainingController');
 
 
 // ----------------------------------------------------------- >> GET:TRAININGS
-router.get("/", trainingController.list_trainings);
+router.get("/", trainingController.get_trainings);
 // --------------------------------------------------------- >> GET:TRAINING:ID
-router.get("/:id", trainingController.find_training);
+router.get("/:id", trainingController.get_training);
 // ----------------------------------------------------------- >> POST:TRAINING
 router.post("/", trainingController.create_training);
 // --------------------------------------------------------- >> PUT:TRAINING:ID

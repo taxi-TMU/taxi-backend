@@ -5,9 +5,9 @@ const questionController = require('../controllers/questionController');
 
 
 // ----------------------------------------------------------- >> GET:QUESTIONS
-router.get("/", questionController.list_questions);
+router.get("/", questionController.get_questions);
 // -------------------------------------------------------- >> GET:QUESTIONS:ID
-router.get("/:id", questionController.find_question);
+router.get("/:id", questionController.get_question);
 // ---------------------------------------------------------- >> POST:QUESTIONS
 router.post("/", questionController.create_question);
 // -------------------------------------------------------- >> PUT:QUESTIONS:ID

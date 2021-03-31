@@ -6,9 +6,9 @@ const userController = require('../controllers/userController');
 // TODO const authorize = require('../middlewares/authorizeUser')
 
 // --------------------------------------------------------------- >> GET:USERS
-router.get("/", userController.list_users);
+router.get("/", userController.get_users);
 // ------------------------------------------------------------- >> GET:USER:ID
-router.get("/:id", userController.find_user);
+router.get("/:id", userController.get_user);
 // --------------------------------------------------------------- >> POST:USER
 router.post("/", userController.create_user);
 // ------------------------------------------------------------- >> PUT:USER:ID

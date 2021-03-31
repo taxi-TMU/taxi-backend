@@ -14,7 +14,7 @@ exports.create_sub_category = async (req, res) => {
 }
 
 
-exports.find_sub_category = async (req, res) => {
+exports.get_sub_category = async (req, res) => {
     const { id } = req.params
     try {
       const target = await SubCategory.findById(id)
@@ -26,7 +26,7 @@ exports.find_sub_category = async (req, res) => {
 }
 
 
-exports.list_sub_categories = async (req, res) => {
+exports.get_sub_categories = async (req, res) => {
   try {
     const allSubCategories = await SubCategory.find({})
     res.json(allSubCategories)

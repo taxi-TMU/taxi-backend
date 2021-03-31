@@ -15,7 +15,7 @@ exports.create_question = async (req, res) => {
 }
 
 
-exports.find_question = async (req, res) => {
+exports.get_question = async (req, res) => {
     const { id } = req.params
     try {
       const target = await Question.findById(id)
@@ -26,7 +26,7 @@ exports.find_question = async (req, res) => {
     }
   }
 
-exports.list_questions = async (req, res) => {
+exports.get_questions = async (req, res) => {
     try {
       const allQuestions = await Question.find({})
       res.json(allQuestions)
