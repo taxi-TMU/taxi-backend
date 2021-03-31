@@ -9,7 +9,7 @@ const userSchema = new Schema({
     email: { type: String, min: 2, max: 50, required: true, unique: true },
     password: { type: String, min: 2, max: 50, required: true },
     last_updated: { type: Date, default: Date.now },
-    // active: { type: Boolean, default: false },
+    active: { type: Boolean, default: false },
 })
 
 userSchema.methods.createToken = function () {

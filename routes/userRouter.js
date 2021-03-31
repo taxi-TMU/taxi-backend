@@ -1,18 +1,16 @@
 const express = require("express");
 const router = express.Router();
 
-const userController = require('../controllers/userController');
+const {
+    get_all,
+    get_by_id,
+    create,
+    update
+} = require('../controllers/userController');
 
-// TODO const authorize = require('../middlewares/authorizeUser')
-
-// --------------------------------------------------------------- >> GET:USERS
-router.get("/", userController.get_users);
-// ------------------------------------------------------------- >> GET:USER:ID
-router.get("/:id", userController.get_user);
-// --------------------------------------------------------------- >> POST:USER
-router.post("/", userController.create_user);
-// ------------------------------------------------------------- >> PUT:USER:ID
-// router.put("/:id", userController.update_user);
+router.get("/", get_all);
+router.get("/:id", get_by_id);
+router.post("/", create);
+router.put("/:id", update);
 
 module.exports = router;
-
