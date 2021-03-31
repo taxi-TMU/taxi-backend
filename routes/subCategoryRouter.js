@@ -1,6 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
+const { validateName, validateCategoryId } = require('../validators') 
+
 const {
     get_all,
     get_by_id,
@@ -10,7 +12,7 @@ const {
 
 router.get("/", get_all);
 router.get("/:id", get_by_id);
-router.post("/", create);
-router.put("/:id", update);
+router.post("/", [validateName, validateCategoryId], create);
+router.put("/:id", [validateName, validateCategoryId], update);
 
 module.exports = router;
