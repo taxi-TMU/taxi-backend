@@ -40,24 +40,29 @@ exports.create = async (req, res) => {
     });
     res.json(created)
   } catch (e) {
-    res.status(500).send('Error while creating entry');
+    res.status(500).send(e.message);
   }
 };
 
 // ------------------------------------------------------------------ >> PUT:ID
 exports.update = async (req, res) => {
     const { id } = req.params
-    const { name } = req.body
+    const { name, sub_categories } = req.body
 
     const errors = validationResult(req); 
     if(!errors.isEmpty()){ 
         return res.status(422).send({errors}) 
     }
 
+    let toUpdate = {};
+    if (name) toUpdate.name = name;
+    if (sub_categories) toUpdate.sub_categories = sub_categories;
+  
     try {
-      const toUpdate = await Category.findOneAndUpdate(id,
-        {name: name}, {new: true})
-      res.send(toUpdate)
+      const updatedObj = await Category.findByIdAndUpdate(id, 
+        toUpdate, {new: true}
+      )
+      res.send(updatedObj)
     } catch (e) {
       res.status(500).send(e.message);
     }
