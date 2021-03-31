@@ -9,8 +9,9 @@ const logger = require('morgan');
 const app = express();
 const cors = require('cors');
 
-const userRouter = require('./routes/userRoute');
-const questionRouter = require('./routes/questionRoute');
+const userRouter = require('./routes/userRouter');
+const authRouter = require('./routes/authRouter');
+const questionRouter = require('./routes/questionRouter');
 const categoryRouter = require('./routes/categoryRouter');
 const subCategoryRouter = require('./routes/subCategoryRouter');
 const trainingRouter = require('./routes/trainingRouter');
@@ -22,6 +23,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/auth', authRouter);
 app.use('/api/v1/user', userRouter);
 app.use('/api/v1/question', questionRouter);
 app.use('/api/v1/category', categoryRouter);
