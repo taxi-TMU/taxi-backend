@@ -13,4 +13,4 @@ install dependencies
 run with nodemon
 ```npm run dev```
 
-```localhost:3001```
+```http://localhost:3001/```
