@@ -34,3 +34,23 @@ exports.get_questions = async (req, res) => {
       res.status(500).send(e.message)
     }
   }
+
+
+// --------------------------------------------------------- >> PUT:QUESTION:ID
+exports.update = async (req, res) => {
+  const { id } = req.params
+  const { name } = req.body
+
+  const errors = validationResult(req); 
+  if(!errors.isEmpty()){ 
+      return res.status(422).send({errors}) 
+  }
+
+  try {
+    const toUpdate = await Category.findOneAndUpdate(id,
+      {name: name}, {new: true})
+    res.send(toUpdate)
+  } catch (e) {
+    res.status(500).send(e.message);
+  }
+};

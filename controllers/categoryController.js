@@ -2,8 +2,8 @@ const { validationResult } = require('express-validator');
 const Category = require('../models/categoryModel');
 
 
-// ---------------------------------------------------------- >> GET:CATEGORIES
-exports.get_categories = async (req, res) => {
+// --------------------------------------------------------------------- >> GET
+exports.get_all = async (req, res) => {
   try {
     const allCategories = await Category.find({});
     res.json(allCategories);
@@ -12,8 +12,8 @@ exports.get_categories = async (req, res) => {
   }
 };
 
-// --------------------------------------------------------- >> GET:CATEGORY:ID
-exports.get_category = async (req, res) => {
+// ------------------------------------------------------------------ >> GET:ID
+exports.get_by_id = async (req, res) => {
   const { id } = req.params;
 
   try {
@@ -25,8 +25,8 @@ exports.get_category = async (req, res) => {
   }
 };
 
-// ----------------------------------------------------------- >> POST:CATEGORY
-exports.create_category = async (req, res) => {
+// -------------------------------------------------------------------- >> POST
+exports.create = async (req, res) => {
   const { name, sub_categories } = req.body;
 
   const errors = validationResult(req) 
@@ -44,8 +44,8 @@ exports.create_category = async (req, res) => {
   }
 };
 
-// --------------------------------------------------------- >> PUT:CATEGORY:ID
-exports.update_category = async (req, res) => {
+// ------------------------------------------------------------------ >> PUT:ID
+exports.update = async (req, res) => {
     const { id } = req.params
     const { name } = req.body
 
