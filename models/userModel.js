@@ -19,7 +19,8 @@ userSchema.methods.createToken = function () {
     return token
 }
 
-// TODO userSchema.pre("save", async function (next) {
+// TODO MOTHERFUCKING ASSHOLE DONT FORGET TO FIX THIS
+//     userSchema.pre("save", async function (next) {
 //     if (!this.isModified("password")) {
 //       return next();
 //     }

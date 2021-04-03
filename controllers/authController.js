@@ -2,11 +2,13 @@ const bcrypt = require('bcrypt')
 const crypto = require("crypto");
 const { validationResult } = require('express-validator');
 const clientURL = process.env.CLIENT_URL; // TODO change this 
+const serverUrl = process.env.SERVER_URL;
 
 const sendEmail = require("../utils/email/sendEmail");
 
 const User = require('../models/userModel');
 const Token = require("../models/tokenModel");
+const Code = require("../models/codeModel");
 
 
 // -------------------- SIGN UP --------------------------------------- >> POST
@@ -27,10 +29,14 @@ exports.signup = async (req, res, next) => {
         first_name, last_name, email, active: false,
         password: encryptedPassword 
     })
+
+    const secretCode = await Code.create({
+      secretCode: "dqwdxcxw3z", email
+    })
     
     const token = user.createToken()
-    const link = `${clientURL}/emailConfirm?token=${token}&id=${user._id}`;
-
+    // url: `${baseUrl}/api/auth/verification/verify-account/${user._id}/${secretCode}`
+    const link = `${serverUrl}/emailConfirm/${secretCode.secretCode}/${user._id}`
     await sendEmail(
         user.email, 
         `Welcome to TMU! Please confirm your email`,
@@ -42,34 +48,49 @@ exports.signup = async (req, res, next) => {
             userId: user._id,
             email: user.email,
             name: `${user.first_name} ${user.last_name} `,
-            password: encryptedPassword,
             active: user.active,
             token: token,
             link: link,
+            secretCode: secretCode
         }
     )
 };
 
+
+// -------------------- ACTIVATE / VERIFY USER ------------------------ >> POST
+exports.emailConfirm = async (req, res, next) => {
+  const { secretCode, userId } = req.params;
+
+  const user = await User.findOne({ _id: userId });
+  const code = await Code.findOne({ email: user.email });
+  if ( code.secretCode !== secretCode ) {
+    return res.status(400).send("Cannot verify account")
+  }
+  
+  user.active = true
+  res.redirect(clientURL)
+}
+
+
 // -------------------- LOGIN ----------------------------------------- >> POST
 exports.login = async (req, res, next) => {
+  const { email, password } = req.body
 
-    const { email, password } = req.body
+  let user = await User.findOne({ email })
+  if (!user) return res.status(400).send('Invalid Credentials')
 
-    let user = await User.findOne({ email })
-    if (!user) return res.status(400).send('Invalid Credentials')
+  const match = await bcrypt.compare(password, user.password)
 
-    const match = await bcrypt.compare(password, user.password)
+  if (!match) return res.status(400).send(`No match! Invalid Credentials`)
 
-    if (!match) return res.status(400).send(`No match! Invalid Credentials`)
+  const token = user.createToken()
 
-    const token = user.createToken()
+  const obj = {
+      msg: 'User logged in successfully',
+      token: token
+  }
 
-    const obj = {
-        msg: 'User logged in successfully',
-        token: token
-    }
-
-    res.set('x-authorization-token', token).send(obj)
+  res.set('x-authorization-token', token).send(obj)
 
 }
 

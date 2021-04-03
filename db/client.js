@@ -8,9 +8,9 @@ mongoose.connect(process.env.MONGO_DB, {
     autoIndex: true,
 })
 .then(() => {
-    console.log('----- Database connection established successfully -------')
+    console.log(' -------- Database connection established successfully -------')
 })
-.catch((e) => console.log(`-------- ${e.message} ------------`))
+.catch((e) => console.log(`-------- ${e.message} --------`))
 
 const client = mongoose.connection
 

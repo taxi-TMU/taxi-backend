@@ -34,7 +34,7 @@ module.exports = {
     validateIsActive: check('active')
         .isBoolean() 
         .withMessage("Only boolean values allowed"),
-    validateUserId: check('user')
+    validateUserId: check('userId')
         .not()
         .isEmpty()
         .withMessage("Id can't be empty"),

@@ -6,7 +6,7 @@ const Schema = mongoose.Schema
 const ObjectId = mongoose.Schema.Types.ObjectId;
 
 const trainingSchema = new Schema({
-    user: { type: ObjectId, ref: 'User', required: true },
+    userId: { type: ObjectId, ref: 'User', required: true },
     simulation: { type: Boolean, required: true },
     time_start: { type: Date },
     time_end: { type: Date },

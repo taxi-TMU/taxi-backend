@@ -26,7 +26,7 @@ exports.get_by_id = async (req, res) => {
 
 // -------------------------------------------------------------------- >> POST
 exports.create = async (req, res) => {
-  const { user, simulation, time_start, time_end, question_set } = req.body
+  const { userId, simulation, time_start, time_end, question_set } = req.body
   
   const errors = validationResult(req) 
   if(!errors.isEmpty()){ 
@@ -35,7 +35,7 @@ exports.create = async (req, res) => {
   
   try {
       const created = await Training.create({ 
-          user, simulation, time_start, time_end, question_set
+        userId, simulation, time_start, time_end, question_set
       })
       res.json(created)
   } catch (e) {
@@ -45,7 +45,7 @@ exports.create = async (req, res) => {
 // ------------------------------------------------------------------ >> PUT:ID
 exports.update = async (req, res) => {
   const { id } = req.params
-  const { user, simulation, time_start, time_end } = req.body
+  const { userId, simulation, time_start, time_end } = req.body
 
   const errors = validationResult(req); 
   if(!errors.isEmpty()){ 
@@ -53,7 +53,7 @@ exports.update = async (req, res) => {
   }
 
   let toUpdate = {};
-  if (user) toUpdate.user = user;
+  if (userId) toUpdate.userId = userId;
   if (simulation) toUpdate.simulation = simulation;
   if (time_start) toUpdate.time_start = time_start;
   if (time_end) toUpdate.time_end = time_end;

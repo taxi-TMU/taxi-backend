@@ -7,14 +7,17 @@ const { validateFirstName, validateLastName, validateEmail,
 const {
     login,
     signup,
+    emailConfirm,
     resetPasswordRequestController,
     resetPasswordController
 } = require('../controllers/authController');
 
-router.post("/login", login);
 router.post("/signup", [validateFirstName, validateLastName, validatePassword, 
                     validateEmail], signup);
-router.post("/resetPasswordRequest", resetPasswordRequestController);
+router.post("/login", login);
+router.post("/emailConfirm/:secretCode/:userId", emailConfirm);
+router.post("/resetPasswordRequest", [validateEmail],
+                    resetPasswordRequestController);
 router.post("/resetPassword", resetPasswordController);
 
 module.exports = router;
