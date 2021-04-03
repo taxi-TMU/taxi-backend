@@ -35,7 +35,6 @@ exports.signup = async (req, res, next) => {
     })
     
     const token = user.createToken()
-    // url: `${baseUrl}/api/auth/verification/verify-account/${user._id}/${secretCode}`
     const link = `${serverUrl}/emailConfirm/${secretCode.secretCode}/${user._id}`
     await sendEmail(
         user.email, 
@@ -66,6 +65,8 @@ exports.emailConfirm = async (req, res, next) => {
   if ( code.secretCode !== secretCode ) {
     return res.status(400).send("Cannot verify account")
   }
+
+  // TODO handle if secretCode is expired
   
   user.active = true
   res.redirect(clientURL)
