@@ -1,5 +1,6 @@
 const bcrypt = require('bcrypt')
 const crypto = require("crypto");
+const { v4: uuidv4 } = require('uuid');
 const { validationResult } = require('express-validator');
 const clientURL = process.env.CLIENT_URL; // TODO change this 
 const serverUrl = process.env.SERVER_URL;
@@ -31,7 +32,8 @@ exports.signup = async (req, res, next) => {
     })
 
     const secretCode = await Code.create({
-      secretCode: "dqwdxcxw3z", email
+      secretCode: await bcrypt.hash(uuidv4().toString(), 10),
+      email
     })
     
     const token = user.createToken()
@@ -65,11 +67,14 @@ exports.emailConfirm = async (req, res, next) => {
   if ( code.secretCode !== secretCode ) {
     return res.status(400).send("Cannot verify account")
   }
+  if (user.active) return res.json("already active")
 
-  // TODO handle if secretCode is expired
-  
-  user.active = true
-  res.redirect(clientURL)
+  // TODO handle flow when secretCode is expired
+  user.active = true;
+  await user.save();
+  // TODO replace res.json with res.redirect(clientURL)
+
+  res.json("User activated")
 }
 
 
