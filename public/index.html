@@ -9,19 +9,11 @@
     <h1>TMU App</h1>
 
 
-    <h3 color="#ff0">ENDPOINTS USER:</h3>
-    <p><span style="color: green">GET</span> <small>ALL</small></p>
-    <a href="https://tmu-taxi-api.herokuapp.com/api/v1/user">
-        <code style="background-color: #f2ecf5; color: #c63dfc">https://tmu-taxi-api.herokuapp.com/api/v1/user</code>
-    </a>
+  <h3 color="#ff0">ENDPOINTS AUTH:</h3>
 
-    <p><span style="color: green">GET </span> <small>ONE BY ID</small></p>
-    <a href="#">
-        <code style="background-color: #f2ecf5; color: #c63dfc">https://tmu-taxi-api.herokuapp.com/api/v1/user/:id</code>
-    </a>
-    <p><span style="color: red">POST</span> <small>POST</small> </p>
-    <a href="#">
-        <code style="background-color: #f2ecf5; color: #c63dfc">https://tmu-taxi-api.herokuapp.com/api/v1/user/</code>
+<p><span style="color: red">POST</span> <small>Sign Up</small> </p>
+    <a href="https://tmu-taxi-api.herokuapp.com/signup">
+        <code style="background-color: #f2ecf5; color: #c63dfc">https://tmu-taxi-api.herokuapp.com/signup</code>
     </a>
     <p><small>FIELDS</small></p>
     <ul>
@@ -42,6 +34,52 @@
          | String | required | min:8 | max: 100
       </li>
     </ul>
+
+    <p><span style="color: red">POST</span> <small>Login</small> </p>
+    <a href="https://tmu-taxi-api.herokuapp.com/login">
+        <code style="background-color: #f2ecf5; color: #c63dfc">https://tmu-taxi-api.herokuapp.com/login</code>
+    </a>
+    <p><small>FIELDS</small></p>
+    <ul>
+      <li>
+        <strong>email</strong>
+         | String | required | min:5 | max: 50
+      </li>
+      <li>
+        <strong>password</strong>
+         | String | required | min:8 | max: 100
+      </li>
+    </ul>
+
+
+    <p><span style="color: red">POST</span> <small>Reset Password Request</small> </p>
+    <a href="https://tmu-taxi-api.herokuapp.com/resetPasswordRequest">
+        <code style="background-color: #f2ecf5; color: #c63dfc">https://tmu-taxi-api.herokuapp.com/resetPasswordRequest</code>
+    </a>
+    <p><small>FIELDS</small></p>
+    <ul>
+      <li>
+        <strong>email</strong>
+         | String 
+      </li>
+    </ul>
+
+
+
+
+
+<hr class="m-5">
+    <h3 color="#ff0">ENDPOINTS USER:</h3>
+    <p><span style="color: green">GET</span> <small>ALL</small></p>
+    <a href="https://tmu-taxi-api.herokuapp.com/api/v1/user">
+        <code style="background-color: #f2ecf5; color: #c63dfc">https://tmu-taxi-api.herokuapp.com/api/v1/user</code>
+    </a>
+
+    <p><span style="color: green">GET </span> <small>ONE BY ID</small></p>
+    <a href="#">
+        <code style="background-color: #f2ecf5; color: #c63dfc">https://tmu-taxi-api.herokuapp.com/api/v1/user/:id</code>
+    </a>
+
     <p><span style="color: blue">PUT</span> <small>FIND BY ID & UPDATE</small> </p>
     <a href="#">
         <code style="background-color: #f2ecf5; color: #c63dfc">https://tmu-taxi-api.herokuapp.com/api/v1/user/:id</code>
