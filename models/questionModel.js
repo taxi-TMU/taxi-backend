@@ -9,7 +9,6 @@ const questionSchema = new Schema({
     sub_category: { type: ObjectId, ref: 'SubCategory', required: true },
     answers: Array, // TODO subschema?
 })
-console.log("arrived in schema")
 
 const Question = mongoose.model('Question', questionSchema)
 

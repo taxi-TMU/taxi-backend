@@ -1,3 +1,4 @@
+require("express-async-errors");
 require('dotenv').config();
 require('./db/client')
 
@@ -23,7 +24,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/auth', authRouter);
+app.use('/', authRouter);
 app.use('/api/v1/user', userRouter);
 app.use('/api/v1/question', questionRouter);
 app.use('/api/v1/category', categoryRouter);

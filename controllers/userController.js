@@ -25,32 +25,6 @@ exports.get_by_id = async (req, res) => {
     }
 }
 
-// -------------------------------------------------------------------- >> POST
-exports.create = async (req, res) => {
-  const { first_name, last_name, email, password } = req.body
-
-  const errors = validationResult(req) 
-  if(!errors.isEmpty()){ 
-      return res.status(422).send({errors}) 
-  }
-
-  try {
-    const newUser = new User({ 
-        first_name, last_name, email, password: await bcrypt.hash(password, 10) 
-    })
-
-    await newUser.save()
-
-    const token = newUser.createToken()
-    res.set('x-authorization-token', token).send(
-      `${first_name} ${last_name}, ${email}: created successfully`
-    )
-
-  } catch (e) {
-    res.status(500).send(e.message)
-  }
-}
-
 // ------------------------------------------------------------------ >> PUT:ID
 exports.update = async (req, res) => {
   const { id } = req.params
