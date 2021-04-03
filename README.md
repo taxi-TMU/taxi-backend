@@ -12,6 +12,10 @@ install dependencies
 
 ```npm i```
 
+add credentials
+
+```cp .env.sample .env; vi .env```
+
 run with nodemon
 
 ```npm run dev```
