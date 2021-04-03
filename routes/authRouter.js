@@ -8,8 +8,8 @@ const {
     login,
     signup,
     emailConfirm,
-    resetPasswordRequestController,
-    resetPasswordController
+    resetPasswordRequest,
+    resetPassword
 } = require('../controllers/authController');
 
 router.post("/signup", [validateFirstName, validateLastName, validatePassword, 
@@ -17,7 +17,7 @@ router.post("/signup", [validateFirstName, validateLastName, validatePassword,
 router.post("/login", login);
 router.post("/emailConfirm/:secretCode/:userId", emailConfirm);
 router.post("/resetPasswordRequest", [validateEmail],
-                    resetPasswordRequestController);
-router.post("/resetPassword", resetPasswordController);
+                    resetPasswordRequest);
+router.post("/resetPassword", resetPassword);
 
 module.exports = router;

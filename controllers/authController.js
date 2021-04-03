@@ -87,7 +87,7 @@ exports.login = async (req, res, next) => {
 
   const match = await bcrypt.compare(password, user.password)
 
-  if (!match) return res.status(400).send(`No match! Invalid Credentials`)
+  if (!match) return res.status(400).send("Invalid Credentials")
 
   const token = user.createToken()
 
@@ -101,7 +101,7 @@ exports.login = async (req, res, next) => {
 }
 
 // -------------------- PASSWORD RESET REQUEST------------------------- >> POST
-exports.resetPasswordRequestController = async (req, res, next) => {
+exports.resetPasswordRequest = async (req, res, next) => {
     const { email } = req.body
 
     const user = await User.findOne({ email });
@@ -133,7 +133,7 @@ exports.resetPasswordRequestController = async (req, res, next) => {
 };
   
 // -------------------- RESET PASSWORD -------------------------------- >> POST
-exports.resetPasswordController = async (req, res, next) => {
+exports.resetPassword = async (req, res, next) => {
     const { userId, token, password} = req.body
 
     let passwordResetToken = await Token.findOne({ userId });
