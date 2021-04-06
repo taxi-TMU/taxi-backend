@@ -4,7 +4,6 @@ const authorizeUser = (req, res, next) => {
     const authHeader = req.headers.authorization
 
     if (!authHeader) return res.status(400).send('No auth headers provided')
-    // alt. syntax :: const token = authHeader.split(' ')[1]
     const [bearer, token] = authHeader.split(' ')
 
     console.log(token)

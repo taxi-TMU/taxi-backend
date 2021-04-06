@@ -2,8 +2,8 @@ const bcrypt = require('bcrypt')
 const crypto = require("crypto");
 const { v4: uuidv4 } = require('uuid');
 const { validationResult } = require('express-validator');
-const clientURL = process.env.CLIENT_URL; // TODO change this 
-const serverUrl = process.env.SERVER_URL;
+const clientURL = process.env.CLIENT_URL;  
+const serverUrl = process.env.SERVER_URL; // TODO change this
 
 const sendEmail = require("../utils/email/sendEmail");
 
@@ -64,7 +64,7 @@ exports.emailConfirm = async (req, res, next) => {
 
   const user = await User.findOne({ _id: userId });
   const code = await Code.findOne({ email: user.email });
-  if ( code.secretCode !== secretCode ) {
+  if (code.secretCode !== secretCode) {
     return res.status(400).send("Cannot verify account")
   }
   if (user.active) return res.json("already active")
@@ -72,7 +72,7 @@ exports.emailConfirm = async (req, res, next) => {
   // TODO handle flow when secretCode is expired
   user.active = true;
   await user.save();
-  // TODO replace res.json with res.redirect(clientURL)
+  // TODO replace res.json with res.redirect(clientURL), when frontend deployed
 
   res.json("User activated")
 }
@@ -100,16 +100,16 @@ exports.login = async (req, res, next) => {
 
 }
 
-// -------------------- PASSWORD RESET REQUEST------------------------- >> POST
+// -------------------- PASSWORD RESET REQUEST ------------------------ >> POST
 exports.resetPasswordRequest = async (req, res, next) => {
     const { email } = req.body
 
     const user = await User.findOne({ email });
     if (!user) throw new Error("User does not exist");
 
-    let token = await Token.findOne({ userId: user._id });
+    const token = await Token.findOne({ userId: user._id });
     if (token) await token.deleteOne();
-    let resetToken = crypto.randomBytes(32).toString("hex");
+    const resetToken = crypto.randomBytes(32).toString("hex");
     const hash = await bcrypt.hash(resetToken, 10);
 
     await Token.create({
@@ -118,23 +118,23 @@ exports.resetPasswordRequest = async (req, res, next) => {
         createdAt: Date.now(),
     })
 
-    const link = `${clientURL}/passwordReset?token=${resetToken}&id=${user._id}`;
+    const url = `${clientURL}/passwordReset?token=${resetToken}&id=${user._id}`;
     sendEmail(user.email, 
         "Password Reset Request",
-        {name: `${user.first_name} ${user.last_name} `, link: link,},
+        {name: `${user.first_name} ${user.last_name} `, link: url,},
         "./template/requestResetPassword.handlebars");
 
     return res.json({
         userId: user._id,
         email: user.email,
         name: `${user.first_name} ${user.last_name} `,
-        link: link
+        link: url
     });
 };
   
 // -------------------- RESET PASSWORD -------------------------------- >> POST
 exports.resetPassword = async (req, res, next) => {
-    const { userId, token, password} = req.body
+    const { userId, token, password } = req.body
 
     let passwordResetToken = await Token.findOne({ userId });
     if (!passwordResetToken) {
@@ -153,7 +153,7 @@ exports.resetPassword = async (req, res, next) => {
     const user = await User.findById({ _id: userId });
     sendEmail(
       user.email,
-      "Password Reset Successfully",
+      "Password succesfully updated",
       {
         name: `${user.first_name} ${user.last_name} `,
       },

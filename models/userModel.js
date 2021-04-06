@@ -19,14 +19,15 @@ userSchema.methods.createToken = function () {
     return token
 }
 
-// TODO MOTHERFUCKING ASSHOLE DONT FORGET TO FIX THIS
-//     userSchema.pre("save", async function (next) {
-//     if (!this.isModified("password")) {
-//       return next();
-//     }
-//     const hash = await bcrypt.hash(this.password, 10);
-//     this.password = hash;
-//     next();
+// // TODO MOTHERFUCKING ASSHOLE DONT FORGET TO FIX THIS
+// userSchema.pre("save", async function (next) {
+//   if (!this.isModified("password")) {
+//     console.log(`---------------- is the same ---------------------------`)
+//     return next();
+//   }
+//   // const hash = await bcrypt.hash(this.password, 10);
+//   // this.password = hash;
+//   // next();
 //   });
 
 
