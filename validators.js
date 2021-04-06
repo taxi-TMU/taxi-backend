@@ -21,16 +21,17 @@ module.exports = {
         .not()
         .isEmpty()
         .withMessage("email can't be empty")
-        .isLength({ min: 5, max: 50 })
-        .withMessage("Min 5, max 50 chars")
+        .isLength({ min: 5, max: 100 })
+        .withMessage("Min 5, max 100 chars")
         .isEmail()
         .withMessage("Only valid mailformat allowed"),
     validatePassword: check('password')
         .not()
         .isEmpty()
-        .withMessage("pw can't be empty")
+        .withMessage("Password can't be empty")
         .isLength({ min: 8, max: 100 })
         .withMessage("Min 8, max 100 chars"),
+        // 
     validateIsActive: check('active')
         .isBoolean() 
         .withMessage("Only boolean values allowed"),

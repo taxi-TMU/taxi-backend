@@ -100,7 +100,7 @@ exports.login = async (req, res, next) => {
 
 }
 
-// -------------------- PASSWORD RESET REQUEST ------------------------ >> POST
+// -------------------- PASSWORD REQUEST ------------------------ >> POST
 exports.resetPasswordRequest = async (req, res, next) => {
     const { email } = req.body
 
