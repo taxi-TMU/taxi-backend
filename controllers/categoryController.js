@@ -1,9 +1,9 @@
+/* eslint-disable camelcase */
 const { validationResult } = require('express-validator');
 const Category = require('../models/categoryModel');
 
-
 // --------------------------------------------------------------------- >> GET
-exports.get_all = async (req, res) => {
+exports.get_all = async (_req, res) => {
   try {
     const allCategories = await Category.find({});
     res.json(allCategories);
@@ -19,9 +19,9 @@ exports.get_by_id = async (req, res) => {
   try {
     const target = await Category.findById(id);
     if (!target) return res.status(404).send('Entry not found');
-    res.json(target);
+    return res.json(target);
   } catch (e) {
-    res.status(500).send(e.message);
+    return res.status(500).send(e.message);
   }
 };
 
@@ -29,44 +29,42 @@ exports.get_by_id = async (req, res) => {
 exports.create = async (req, res) => {
   const { name, sub_categories } = req.body;
 
-  const errors = validationResult(req) 
-  if(!errors.isEmpty()){ 
-      return res.status(422).send({errors}) 
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(422).send({ errors });
   }
 
   try {
     const created = await Category.create({
-      name, sub_categories
+      name,
+      sub_categories,
     });
-    res.json(created)
+    return res.json(created);
   } catch (e) {
-    res.status(500).send(e.message);
+    return res.status(500).send(e.message);
   }
 };
 
 // ------------------------------------------------------------------ >> PUT:ID
 exports.update = async (req, res) => {
-    const { id } = req.params
-    const { name, sub_categories } = req.body
+  const { id } = req.params;
+  const { name, sub_categories } = req.body;
 
-    const errors = validationResult(req); 
-    if(!errors.isEmpty()){ 
-        return res.status(422).send({errors}) 
-    }
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(422).send({ errors });
+  }
 
-    let toUpdate = {};
-    if (name) toUpdate.name = name;
-    if (sub_categories) toUpdate.sub_categories = sub_categories;
-  
-    try {
-      const updatedObj = await Category.findByIdAndUpdate(id, 
-        toUpdate, {new: true}
-      )
-      res.send(updatedObj)
-    } catch (e) {
-      res.status(500).send(e.message);
-    }
+  const toUpdate = {};
+  if (name) toUpdate.name = name;
+  if (sub_categories) toUpdate.sub_categories = sub_categories;
+
+  try {
+    const updatedObj = await Category.findByIdAndUpdate(id, toUpdate, {
+      new: true,
+    });
+    return res.send(updatedObj);
+  } catch (e) {
+    return res.status(500).send(e.message);
+  }
 };
-
-
-

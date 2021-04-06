@@ -1,71 +1,78 @@
+/* eslint-disable camelcase */
 const { validationResult } = require('express-validator');
-const Question = require('../models/questionModel')
-
+const Question = require('../models/questionModel');
 
 // --------------------------------------------------------------------- >> GET
-exports.get_all = async (req, res) => {
+exports.get_all = async (_req, res) => {
   try {
-    const allQuestions = await Question.find({})
-    res.json(allQuestions)
+    const allQuestions = await Question.find({});
+    res.json(allQuestions);
   } catch (e) {
-    res.status(500).send(e.message)
+    res.status(500).send(e.message);
   }
 };
 
 // ------------------------------------------------------------------ >> GET:ID
 exports.get_by_id = async (req, res) => {
-  const { id } = req.params
+  const { id } = req.params;
 
   try {
-    const target = await Question.findById(id)
+    const target = await Question.findById(id);
     if (!target) return res.status(404).send('Entry not found');
-    res.json(target)
+    return res.json(target);
   } catch (e) {
-    res.status(500).send(e.message)
+    return res.status(500).send(e.message);
   }
 };
 
 // -------------------------------------------------------------------- >> POST
 exports.create = async (req, res) => {
-  const { language, question_text, sub_category, answers } = req.body
-  
-  const errors = validationResult(req) 
-  if(!errors.isEmpty()){ 
-      return res.status(422).send({errors}) 
+  const {
+    language, question_text, sub_category, answers,
+  } = req.body;
+
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(422).send({ errors });
   }
 
   try {
-    const created = await Question.create({ 
-        language, question_text, sub_category, answers
-    })
-    res.json(created)
+    const created = await Question.create({
+      language,
+      question_text,
+      sub_category,
+      answers,
+    });
+    return res.json(created);
   } catch (e) {
-    res.status(500).send(e.message)
+    return res.status(500).send(e.message);
   }
 };
 
 // ------------------------------------------------------------------ >> PUT:ID
 exports.update = async (req, res) => {
-  const { id } = req.params
-  const { language, question_text, sub_category, answers } = req.body
+  const { id } = req.params;
+  const {
+    language, question_text, sub_category, answers,
+  } = req.body;
 
-  const errors = validationResult(req); 
-  if(!errors.isEmpty()){ 
-      return res.status(422).send({errors}) 
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(422).send({ errors });
   }
 
-  let toUpdate = {};
+  const toUpdate = {};
   if (language) toUpdate.language = language;
   if (question_text) toUpdate.question_text = question_text;
   if (sub_category) toUpdate.sub_category = sub_category;
   if (answers) toUpdate.answers = answers;
 
   try {
-    const updatedObj = await Question.findByIdAndUpdate(id, 
-      toUpdate, {new: true}
-    )
-    res.send(updatedObj)
+    const updatedObj = await Question.findByIdAndUpdate(id, toUpdate, {
+      new: true,
+    });
+    return res.send(updatedObj);
   } catch (e) {
-    res.status(500).send(e.message);
+    return res.status(500).send(e.message);
   }
 };

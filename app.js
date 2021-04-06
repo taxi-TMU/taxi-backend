@@ -1,6 +1,6 @@
-require("express-async-errors");
+require('express-async-errors');
 require('dotenv').config();
-require('./db/client')
+require('./db/client');
 
 const express = require('express');
 const path = require('path');

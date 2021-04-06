@@ -1,21 +1,25 @@
+/* eslint-disable no-console */
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGO_DB, {
+mongoose
+  .connect(process.env.MONGO_DB, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
     useCreateIndex: true,
     autoIndex: true,
-})
-.then(() => {
-    console.log(' -------- Database connection established successfully -------')
-})
-.catch((e) => console.log(`-------- ${e.message} --------`))
+  })
+  .then(() => {
+    console.log(
+      ' -------- Database connection established successfully -------',
+    );
+  })
+  .catch((e) => console.log(`-------- ${e.message} --------`));
 
-const client = mongoose.connection
+const client = mongoose.connection;
 
 client.on('error', (e) => {
-    console.log(e.message)
-})
+  console.log(e.message);
+});
 
-module.exports = client
+module.exports = client;
