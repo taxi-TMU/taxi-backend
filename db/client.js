@@ -22,4 +22,12 @@ client.on('error', (e) => {
   console.log(e.message);
 });
 
+process.on('SIGTERM', () => {
+  client.close(() => {
+    console.log(
+      ' -------- Database connection successfully terminated --------'
+    )
+  });
+})
+
 module.exports = client;
