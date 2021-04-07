@@ -8,31 +8,26 @@
 <body>
     <h1>TMU App</h1>
 
+    <h3 color="#ff0">ENDPOINTS AUTH:</h3>
 
-  <h3 color="#ff0">ENDPOINTS AUTH:</h3>
-
-<p><span style="color: red">POST</span> <small>Sign Up</small> </p>
+    <p><span style="color: red">POST</span> <small>Sign Up</small> </p>
     <a href="https://tmu-taxi-api.herokuapp.com/signup">
         <code style="background-color: #f2ecf5; color: #c63dfc">https://tmu-taxi-api.herokuapp.com/signup</code>
     </a>
     <p><small>FIELDS</small></p>
     <ul>
-      <li>
-        <strong>first_name</strong>
-         | String | required | min:2 | max: 50
-      </li>
-      <li>
-        <strong>last_name</strong>
-         | String | required | min:2 | max: 50
-      </li>
-      <li>
-        <strong>email</strong>
-         | String | required | unique | min:5 | max: 50
-      </li>
-      <li>
-        <strong>password</strong>
-         | String | required | min:8 | max: 100
-      </li>
+        <li>
+            <strong>first_name</strong> | String | required | min:2 | max: 50
+        </li>
+        <li>
+            <strong>last_name</strong> | String | required | min:2 | max: 50
+        </li>
+        <li>
+            <strong>email</strong> | String | required | unique | min:5 | max: 50
+        </li>
+        <li>
+            <strong>password</strong> | String | required | min:8 | max: 100
+        </li>
     </ul>
 
     <p><span style="color: red">POST</span> <small>Login</small> </p>
@@ -41,14 +36,12 @@
     </a>
     <p><small>FIELDS</small></p>
     <ul>
-      <li>
-        <strong>email</strong>
-         | String | required | min:5 | max: 50
-      </li>
-      <li>
-        <strong>password</strong>
-         | String | required | min:8 | max: 100
-      </li>
+        <li>
+            <strong>email</strong> | String | required | min:5 | max: 50
+        </li>
+        <li>
+            <strong>password</strong> | String | required | min:8 | max: 100
+        </li>
     </ul>
 
 
@@ -58,17 +51,41 @@
     </a>
     <p><small>FIELDS</small></p>
     <ul>
-      <li>
-        <strong>email</strong>
-         | String 
-      </li>
+        <li>
+            <strong>email</strong> | String
+        </li>
+    </ul>
+
+    <p><span style="color: red">POST</span> <small>Reset Password Request</small> </p>
+    <a href="https://tmu-taxi-api.herokuapp.com/resetPasswordRequest">
+        <code style="background-color: #f2ecf5; color: #c63dfc">https://tmu-taxi-api.herokuapp.com/resetPasswordRequest</code>
+    </a>
+    <p><small>FIELDS</small></p>
+    <ul>
+        <li>
+            <strong>email</strong> | String
+        </li>
+    </ul>
+
+    <p><span style="color: red">POST</span> <small>Reset Password</small> </p>
+    <a href="https://tmu-taxi-api.herokuapp.com/resetPassword">
+        <code style="background-color: #f2ecf5; color: #c63dfc">https://tmu-taxi-api.herokuapp.com/resetPassword</code>
+    </a>
+    <p><small>FIELDS</small></p>
+    <ul>
+        <li>
+            <strong>userId</strong> | String
+        </li>
+        <li>
+            <strong>token</strong> | String
+        </li>
+        <li>
+            <strong>password</strong> | String | required | min:8 | max: 100
+        </li>
     </ul>
 
 
-
-
-
-<hr class="m-5">
+    <hr class="m-5">
     <h3 color="#ff0">ENDPOINTS USER:</h3>
     <p><span style="color: green">GET</span> <small>ALL</small></p>
     <a href="https://tmu-taxi-api.herokuapp.com/api/v1/user">
@@ -86,14 +103,12 @@
     </a>
     <p><small>FIELDS</small></p>
     <ul>
-      <li>
-        <strong>first_name</strong>
-         | String | min:2 | max: 50
-      </li>
-      <li>
-        <strong>last_name</strong>
-         | String | min:2 | max: 50
-      </li>
+        <li>
+            <strong>first_name</strong> | String | min:2 | max: 50
+        </li>
+        <li>
+            <strong>last_name</strong> | String | min:2 | max: 50
+        </li>
     </ul>
     <hr class="m-5">
 
@@ -114,14 +129,12 @@
     </a>
     <p><small>FIELDS</small></p>
     <ul>
-      <li>
-        <strong>name</strong>
-         | String | required | unique | min:2 | max: 50
-      </li>
-      <li>
-        <strong>sub_categories</strong>
-         | Array of ObjectId's 
-      </li>
+        <li>
+            <strong>name</strong> | String | required | unique | min:2 | max: 50
+        </li>
+        <li>
+            <strong>sub_categories</strong> | Array of ObjectId's
+        </li>
     </ul>
     <p><span style="color: blue">PUT</span> <small>FIND BY ID & UPDATE</small> </p>
     <a href="#">
@@ -129,10 +142,9 @@
     </a>
     <p><small>FIELDS</small></p>
     <ul>
-      <li>
-        <strong>name</strong>
-         | String | unique | min:2 | max: 50
-      </li>
+        <li>
+            <strong>name</strong> | String | unique | min:2 | max: 50
+        </li>
     </ul>
 
     <hr class="m-5">
@@ -155,18 +167,15 @@
     </a>
     <p><small>FIELDS</small></p>
     <ul>
-      <li>
-        <strong>name</strong>
-         | String | required | unique | min:2 | max: 50
-      </li>
-      <li>
-        <strong>category</strong>
-         | ObjectId | required
-      </li>
-      <li>
-        <strong>questions</strong>
-         | Array of ObjectId's 
-      </li>
+        <li>
+            <strong>name</strong> | String | required | unique | min:2 | max: 50
+        </li>
+        <li>
+            <strong>category</strong> | ObjectId | required
+        </li>
+        <li>
+            <strong>questions</strong> | Array of ObjectId's
+        </li>
     </ul>
     <p><span style="color: blue">PUT</span> <small>FIND BY ID & UPDATE</small> </p>
     <a href="#">
@@ -174,14 +183,12 @@
     </a>
     <p><small>FIELDS</small></p>
     <ul>
-      <li>
-        <strong>name</strong>
-         | String | unique | min:2 | max: 50
-      </li>
-      <li>
-        <strong>category</strong>
-         | ObjectId 
-      </li>
+        <li>
+            <strong>name</strong> | String | unique | min:2 | max: 50
+        </li>
+        <li>
+            <strong>category</strong> | ObjectId
+        </li>
     </ul>
     <hr class="m-5">
 
@@ -203,22 +210,18 @@
     </a>
     <p><small>FIELDS</small></p>
     <ul>
-      <li>
-        <strong>language</strong>
-         | String | required | min:2 | max: 2
-      </li>
-      <li>
-        <strong>question_text</strong>
-         | String | required | min:2 | max: 500
-      </li>
-      <li>
-        <strong>sub_category</strong>
-         | ObjectId | required
-      </li>
-      <li>
-        <strong>answers</strong>
-         | Array of ObjectId's
-      </li>
+        <li>
+            <strong>language</strong> | String | required | min:2 | max: 2
+        </li>
+        <li>
+            <strong>question_text</strong> | String | required | min:2 | max: 500
+        </li>
+        <li>
+            <strong>sub_category</strong> | ObjectId | required
+        </li>
+        <li>
+            <strong>answers</strong> | Array of ObjectId's
+        </li>
     </ul>
 
     <p><span style="color: blue">PUT</span> <small>FIND BY ID & UPDATE</small> </p>
@@ -227,22 +230,18 @@
     </a>
     <p><small>FIELDS</small></p>
     <ul>
-      <li>
-        <strong>language</strong>
-         | String | min:2 | max: 2
-      </li>
-      <li>
-        <strong>question_text</strong>
-         | String | min:2 | max: 500
-      </li>
-      <li>
-        <strong>sub_category</strong>
-         | ObjectId
-      </li>
-      <li>
-        <strong>answers</strong>
-         | Array of ObjectId's
-      </li>
+        <li>
+            <strong>language</strong> | String | min:2 | max: 2
+        </li>
+        <li>
+            <strong>question_text</strong> | String | min:2 | max: 500
+        </li>
+        <li>
+            <strong>sub_category</strong> | ObjectId
+        </li>
+        <li>
+            <strong>answers</strong> | Array of ObjectId's
+        </li>
     </ul>
 
     <hr class="m-5">
@@ -266,54 +265,44 @@
     <p><small>FIELDS</small></p>
     <ul>
 
-      <li>
-        <strong>userId</strong>
-         | ObjectId | required
-      </li>
-      <li>
-        <strong>simulation</strong>
-         | Boolean | required
-      </li>
-      <li>
-        <strong>time_start</strong>
-         | Date 
-      </li>
-      <li>
-        <strong>time_end</strong>
-         | Date 
-      </li>
-      <li>
-        <strong>question_set</strong>
-         | Array of ObjectId's
-      </li>
+        <li>
+            <strong>userId</strong> | ObjectId | required
+        </li>
+        <li>
+            <strong>simulation</strong> | Boolean | required
+        </li>
+        <li>
+            <strong>time_start</strong> | Date
+        </li>
+        <li>
+            <strong>time_end</strong> | Date
+        </li>
+        <li>
+            <strong>question_set</strong> | Array of ObjectId's
+        </li>
     </ul>
 
-        <p><span style="color: blue">PUT</span> <small>FIND BY ID & UPDATE</small> </p>
+    <p><span style="color: blue">PUT</span> <small>FIND BY ID & UPDATE</small> </p>
     <a href="#">
         <code style="background-color: #f2ecf5; color: #c63dfc">https://tmu-taxi-api.herokuapp.com/api/v1/question/:id</code>
     </a>
     <p><small>FIELDS</small></p>
     <ul>
-      <li>
-        <strong>userId</strong>
-         | ObjectId 
-      </li>
-      <li>
-        <strong>simulation</strong>
-         | Boolean 
-      </li>
-      <li>
-        <strong>time_start</strong>
-         | Date 
-      </li>
-      <li>
-        <strong>time_end</strong>
-         | Date 
-      </li>
-      <li>
-        <strong>question_set</strong>
-         | Array of ObjectId's
-      </li>
+        <li>
+            <strong>userId</strong> | ObjectId
+        </li>
+        <li>
+            <strong>simulation</strong> | Boolean
+        </li>
+        <li>
+            <strong>time_start</strong> | Date
+        </li>
+        <li>
+            <strong>time_end</strong> | Date
+        </li>
+        <li>
+            <strong>question_set</strong> | Array of ObjectId's
+        </li>
     </ul>
     <hr class="m-5">
 

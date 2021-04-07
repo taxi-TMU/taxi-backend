@@ -74,7 +74,6 @@ exports.emailConfirm = async (req, res) => {
   }
   if (user.active) return res.json('already active');
 
-  // TODO handle flow when secretCode is expired
   user.active = true;
   await user.save();
   // TODO replace res.json with res.redirect(clientURL), when frontend deployed
