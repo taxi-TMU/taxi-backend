@@ -6,7 +6,7 @@ const { v4: uuidv4 } = require('uuid');
 const { validationResult } = require('express-validator');
 
 const clientURL = process.env.CLIENT_URL;
-const serverUrl = process.env.SERVER_URL; // TODO change this
+const serverUrl = process.env.SERVER_PROD_URL; // TODO change this
 
 const sendEmail = require('../utils/email/sendEmail');
 
@@ -76,9 +76,7 @@ exports.emailConfirm = async (req, res) => {
 
   user.active = true;
   await user.save();
-  // TODO replace res.json with res.redirect(clientURL), when frontend deployed
-
-  return res.json('User activated');
+  return res.redirect(clientURL);
 };
 
 // -------------------- LOGIN ----------------------------------------- >> POST

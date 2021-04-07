@@ -17,7 +17,7 @@ exports.get_by_id = async (req, res) => {
   const { id } = req.params;
 
   try {
-    const target = await Category.findById(id);
+    const target = await Category.findById(id)// .populate('sub_categories');
     if (!target) return res.status(404).send('Entry not found');
     return res.json(target);
   } catch (e) {
