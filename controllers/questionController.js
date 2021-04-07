@@ -76,3 +76,14 @@ exports.update = async (req, res) => {
     return res.status(500).send(e.message);
   }
 };
+
+// ------------------------------------------------------------------ >> DELETE ALL
+
+exports.delete_all = async (req, res) => {
+  try {
+    const deleted = await Question.deleteMany({});
+    return res.json(deleted);
+  } catch (e) {
+    return res.status(500).send(e.message);
+  }
+};
