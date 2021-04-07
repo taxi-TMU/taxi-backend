@@ -1,4 +1,5 @@
 /* eslint-disable camelcase */
+const bcrypt = require('bcrypt');
 const { validationResult } = require('express-validator');
 const User = require('../models/userModel');
 
@@ -43,7 +44,32 @@ exports.update = async (req, res) => {
     const updatedObj = await User.findByIdAndUpdate(id, toUpdate, {
       new: true,
     });
-    return res.send(updatedObj);
+    return res.json(updatedObj);
+  } catch (e) {
+    return res.status(500).send(e.message);
+  }
+};
+
+// ------------------------------------------------------------------ >> PUT:ID
+exports.update_password = async (req, res) => {
+  const { userId, old_password, password } = req.body;
+
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(422).send({ errors });
+  }
+
+  const user = await User.findById(userId);
+  const match = await bcrypt.compare(old_password, user.password);
+
+  if (!match) return res.status(400).send('Invalid Credentials');
+
+  const encryptedPassword = await bcrypt.hash(password, 10);
+
+  try {
+    user.password = encryptedPassword;
+    await user.save();
+    return res.json('Password updates successfully');
   } catch (e) {
     return res.status(500).send(e.message);
   }

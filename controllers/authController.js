@@ -95,6 +95,7 @@ exports.login = async (req, res) => {
   const obj = {
     msg: 'User logged in successfully',
     token,
+    userId: user._id,
   };
 
   return res.set('x-authorization-token', token).send(obj);

@@ -17,7 +17,7 @@ exports.get_by_id = async (req, res) => {
   const { id } = req.params;
 
   try {
-    const target = await Category.findById(id)// .populate('sub_categories');
+    const target = await Category.findById(id); // TODO .populate('sub_categories');
     if (!target) return res.status(404).send('Entry not found');
     return res.json(target);
   } catch (e) {
@@ -63,7 +63,7 @@ exports.update = async (req, res) => {
     const updatedObj = await Category.findByIdAndUpdate(id, toUpdate, {
       new: true,
     });
-    return res.send(updatedObj);
+    return res.json(updatedObj);
   } catch (e) {
     return res.status(500).send(e.message);
   }

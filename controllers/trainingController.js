@@ -72,7 +72,7 @@ exports.update = async (req, res) => {
     const updatedObj = await Training.findByIdAndUpdate(id, toUpdate, {
       new: true,
     });
-    return res.send(updatedObj);
+    return res.json(updatedObj);
   } catch (e) {
     return res.status(500).send(e.message);
   }

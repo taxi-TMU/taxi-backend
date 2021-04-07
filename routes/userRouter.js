@@ -5,17 +5,19 @@ const router = express.Router();
 
 const {
   validateFirstName, validateLastName,
-  validateIsActive,
+  validateIsActive, validatePassword,
 } = require('../validators');
 
 const {
   get_all,
   get_by_id,
   update,
+  update_password,
 } = require('../controllers/userController');
 
 router.get('/', get_all);
 router.get('/:id', get_by_id);
+router.put('/changePassword', [validatePassword], update_password);
 router.put('/:id', [validateFirstName, validateLastName, validateIsActive],
   update);
 
