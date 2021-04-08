@@ -98,7 +98,7 @@ exports.login = async (req, res) => {
     userId: user._id,
   };
 
-  return res.set('x-authorization-token', token).send(obj);
+  res.set('x-authorization-token', token).send(obj);
 };
 
 // -------------------- PASSWORD REQUEST ------------------------ >> POST
