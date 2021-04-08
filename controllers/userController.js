@@ -28,7 +28,9 @@ exports.get_by_id = async (req, res) => {
 // ------------------------------------------------------------------ >> PUT:ID
 exports.update = async (req, res) => {
   const { id } = req.params;
-  const { first_name, last_name, active } = req.body;
+  const {
+    first_name, last_name, active, email,
+  } = req.body;
 
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
@@ -39,6 +41,7 @@ exports.update = async (req, res) => {
   if (first_name) toUpdate.first_name = first_name;
   if (last_name) toUpdate.last_name = last_name;
   if (active) toUpdate.active = active;
+  if (email) toUpdate.email = email;
 
   try {
     const updatedObj = await User.findByIdAndUpdate(id, toUpdate, {

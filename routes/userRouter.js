@@ -4,7 +4,7 @@ const express = require('express');
 const router = express.Router();
 
 const {
-  validateFirstName, validateLastName,
+  validateFirstName, validateLastName, validateEmail,
   validateIsActive, validatePassword,
 } = require('../validators');
 
@@ -18,7 +18,7 @@ const {
 router.get('/', get_all);
 router.get('/:id', get_by_id);
 router.put('/changePassword', [validatePassword], update_password);
-router.put('/:id', [validateFirstName, validateLastName, validateIsActive],
-  update);
+router.put('/:id', [validateFirstName, validateLastName, validateIsActive,
+  validateEmail], update);
 
 module.exports = router;
