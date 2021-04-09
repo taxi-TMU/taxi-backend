@@ -43,10 +43,13 @@ exports.update = async (req, res) => {
   if (email) toUpdate.email = email;
 
   try {
-    await User.findByIdAndUpdate(id, toUpdate, {
+    const updatedObj = await User.findByIdAndUpdate(id, toUpdate, {
       new: true,
     });
-    return res.json('Profile updated successfully');
+    return res.json({
+      obj: updatedObj,
+      msg: 'User update successful',
+    });
   } catch (e) {
     return res.status(500).send(e.message);
   }
