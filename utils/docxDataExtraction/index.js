@@ -21,7 +21,7 @@ const sourcePath = path.join(__dirname, "source");
 fs.readdir(sourcePath, (err, files) => {
   if (err || !files.length)
     return console.log("Unable to scan directory or directory empty");
-  const sourceFile = files[0];
+  const sourceFile = files[1];
   const fileName = path.basename(sourceFile, path.extname(sourceFile))
 
   try {
@@ -37,6 +37,7 @@ fs.readdir(sourcePath, (err, files) => {
 
           do {
             const currentLine = lines[cursor + 1];
+            // correct answer : minus
             if (/\d/.test(currentLine[0]) || currentLine[0] === "-") {
               let formattedLine = currentLine.replace(/- /g, "");
               formattedLine = formattedLine.replace(/-/g, "");
@@ -45,6 +46,15 @@ fs.readdir(sourcePath, (err, files) => {
                 _id: uuidv4(),
                 text: formattedLine,
                 checked: true,
+              });
+            } else if (/\d/.test(currentLine[0]) || currentLine[0] === "x") {
+              let formattedLine = currentLine.replace(/x /g, "");
+              formattedLine = formattedLine.replace(/x/g, "");
+              formattedLine = formattedLine.replace(/\d/g, "");
+              answers.push({
+                _id: uuidv4(),
+                text: formattedLine,
+                checked: false,
               });
             } else {
               keepParsing = false;
