@@ -18,7 +18,12 @@ exports.get_by_id = async (req, res) => {
   const { id } = req.params;
   try {
     const targetUser = await User.findById(id);
-    if (!targetUser) return res.status(404).send('Entry not found');
+    if (!targetUser) {
+      return res.status(404).send({
+        msg: 'Entry not found',
+        param: 'error',
+      });
+    }
     return res.json(targetUser);
   } catch (e) {
     return res.status(500).send(e.message);
@@ -67,7 +72,12 @@ exports.update_password = async (req, res) => {
   const user = await User.findById(userId);
   const match = await bcrypt.compare(old_password, user.password);
 
-  if (!match) return res.status(400).send('Invalid Credentials');
+  if (!match) {
+    return res.status(400).send({
+      msg: 'Invalid Credentials',
+      param: 'error',
+    });
+  }
 
   const encryptedPassword = await bcrypt.hash(password, 10);
 
