@@ -40,7 +40,7 @@ exports.update = async (req, res) => {
   const toUpdate = {};
   if (first_name) toUpdate.first_name = first_name;
   if (last_name) toUpdate.last_name = last_name;
-  if (active) toUpdate.active = active;
+  // if (active) toUpdate.active = active;
   if (email) toUpdate.email = email;
 
   try {
