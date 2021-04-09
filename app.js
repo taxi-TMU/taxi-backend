@@ -17,7 +17,7 @@ const categoryRouter = require('./routes/categoryRouter');
 const subCategoryRouter = require('./routes/subCategoryRouter');
 const trainingRouter = require('./routes/trainingRouter');
 
-app.use(cors());
+app.use(cors({ exposedHeaders: 'x-authorization-token' }));
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

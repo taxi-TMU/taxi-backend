@@ -18,7 +18,7 @@ const {
 router.post('/signup', [validateFirstName, validateLastName, validatePassword,
   validateEmail], signup);
 router.post('/login', login);
-router.post('/emailConfirm/:secretCode/:userId', emailConfirm);
+router.get('/emailConfirm/:secretCode/:userId', emailConfirm);
 router.post('/resetPasswordRequest', [validateEmail],
   resetPasswordRequest);
 router.post('/resetPassword', resetPassword);
