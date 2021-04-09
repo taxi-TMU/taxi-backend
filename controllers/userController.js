@@ -86,6 +86,9 @@ exports.update_password = async (req, res) => {
     await user.save();
     return res.json('Password updates successfully');
   } catch (e) {
-    return res.status(500).send(e.message);
+    return res.status(500).send({
+      msg: e.message,
+      param: 'error',
+    });
   }
 };
