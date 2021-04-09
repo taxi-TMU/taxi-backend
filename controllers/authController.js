@@ -119,7 +119,7 @@ exports.resetPasswordRequest = async (req, res) => {
     createdAt: Date.now(),
   });
 
-  const url = `${clientURL}/passwordReset?token=${resetToken}&id=${user._id}`;
+  const url = `${clientURL}/reset/password?token=${resetToken}&userId=${user._id}`;
   sendEmail(
     user.email,
     'Password Reset Request',
