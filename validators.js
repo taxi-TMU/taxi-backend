@@ -31,7 +31,6 @@ module.exports = {
     .withMessage("Password can't be empty")
     .isLength({ min: 8, max: 100 })
     .withMessage('Min 8, max 100 chars'),
-  //
   validateIsActive: check('active')
     .isBoolean()
     .withMessage('Only boolean values allowed'),

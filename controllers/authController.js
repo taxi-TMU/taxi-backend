@@ -105,6 +105,11 @@ exports.login = async (req, res) => {
 exports.resetPasswordRequest = async (req, res) => {
   const { email } = req.body;
 
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(422).send({ errors });
+  }
+
   const user = await User.findOne({ email });
   if (!user) throw new Error('User does not exist');
 
@@ -142,6 +147,11 @@ exports.resetPasswordRequest = async (req, res) => {
 // -------------------- RESET PASSWORD -------------------------------- >> POST
 exports.resetPassword = async (req, res) => {
   const { userId, token, password } = req.body;
+
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(422).send({ errors });
+  }
 
   const passwordResetToken = await Token.findOne({ userId });
   if (!passwordResetToken) {
