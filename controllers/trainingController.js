@@ -6,7 +6,7 @@ const Question = require('../models/questionModel');
 // --------------------------------------------------------------------- >> GET
 exports.get_all = async (_req, res) => {
   try {
-    const allTrainings = await Training.find({});
+    const allTrainings = await Training.find({}).populate('question_set');
     return res.json(allTrainings);
   } catch (e) {
     return res.status(500).send({
@@ -21,7 +21,7 @@ exports.get_by_id = async (req, res) => {
   const { id } = req.params;
 
   try {
-    const target = await Training.findById(id);
+    const target = await (await Training.findById(id)).populate('question_set');
     if (!target) return res.status(404).send('Entry not found');
     return res.json(target);
   } catch (e) {
