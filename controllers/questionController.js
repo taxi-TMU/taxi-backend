@@ -30,7 +30,7 @@ exports.get_by_sub_category_id = async (req, res) => {
   const { sub_category_id } = req.params;
 
   try {
-    const target = await Question.find({ sub_category: sub_category_id });
+    const target = await Question.find({ sub_category: sub_category_id }).limit(18);
     if (!target) return res.status(404).send('Entry not found');
     return res.json(target);
   } catch (e) {
