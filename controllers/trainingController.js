@@ -1,6 +1,7 @@
 /* eslint-disable camelcase */
 const { validationResult } = require('express-validator');
 const Training = require('../models/trainingModel');
+const Question = require('../models/questionModel');
 
 // --------------------------------------------------------------------- >> GET
 exports.get_all = async (_req, res) => {
@@ -8,7 +9,10 @@ exports.get_all = async (_req, res) => {
     const allTrainings = await Training.find({});
     return res.json(allTrainings);
   } catch (e) {
-    return res.status(500).send(e.message);
+    return res.status(500).send({
+      msg: e.message,
+      param: 'error',
+    });
   }
 };
 
@@ -21,14 +25,17 @@ exports.get_by_id = async (req, res) => {
     if (!target) return res.status(404).send('Entry not found');
     return res.json(target);
   } catch (e) {
-    return res.status(500).send(e.message);
+    return res.status(500).send({
+      msg: e.message,
+      param: 'error',
+    });
   }
 };
 
 // -------------------------------------------------------------------- >> POST
 exports.create = async (req, res) => {
   const {
-    userId, simulation, time_start, time_end, question_set,
+    userId, sub_category_id, simulation, time_start, time_end,
   } = req.body;
 
   const errors = validationResult(req);
@@ -36,17 +43,24 @@ exports.create = async (req, res) => {
     return res.status(422).send({ errors });
   }
 
+  const questions = await Question.find({
+    sub_category: sub_category_id,
+  }).limit(18);
+
   try {
     const created = await Training.create({
       userId,
       simulation,
       time_start,
       time_end,
-      question_set,
+      question_set: questions,
     });
     return res.json(created);
   } catch (e) {
-    return res.status(500).send(e.message);
+    return res.status(500).send({
+      msg: e.message,
+      param: 'error',
+    });
   }
 };
 
@@ -74,6 +88,9 @@ exports.update = async (req, res) => {
     });
     return res.json(updatedObj);
   } catch (e) {
-    return res.status(500).send(e.message);
+    return res.status(500).send({
+      msg: e.message,
+      param: 'error',
+    });
   }
 };
