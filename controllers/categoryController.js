@@ -5,7 +5,7 @@ const Category = require('../models/categoryModel');
 // --------------------------------------------------------------------- >> GET
 exports.get_all = async (_req, res) => {
   try {
-    const allCategories = await Category.find({});
+    const allCategories = await Category.find({}).populate('sub_categories');
     res.json(allCategories);
   } catch (e) {
     res.status(500).send(e.message);
@@ -17,7 +17,7 @@ exports.get_by_id = async (req, res) => {
   const { id } = req.params;
 
   try {
-    const target = await Category.findById(id); // TODO .populate('sub_categories');
+    const target = await Category.findById(id).populate('sub_categories');
     if (!target) return res.status(404).send('Entry not found');
     return res.json(target);
   } catch (e) {
