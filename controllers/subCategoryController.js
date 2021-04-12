@@ -1,10 +1,12 @@
+/* eslint-disable no-underscore-dangle */
 const { validationResult } = require('express-validator');
 const SubCategory = require('../models/subCategoryModel');
+const Category = require('../models/categoryModel');
 
 // --------------------------------------------------------------------- >> GET
 exports.get_all = async (_req, res) => {
   try {
-    const allSubCategories = await SubCategory.find({});
+    const allSubCategories = await SubCategory.find({}).populate('questions');
     res.json(allSubCategories);
   } catch (e) {
     res.status(500).send(e.message);
@@ -16,7 +18,7 @@ exports.get_by_id = async (req, res) => {
   const { id } = req.params;
 
   try {
-    const target = await SubCategory.findById(id);
+    const target = await SubCategory.findById(id).populate('questions');
     if (!target) return res.status(404).send('Entry not found');
     return res.json(target);
   } catch (e) {
@@ -34,12 +36,22 @@ exports.create = async (req, res) => {
   }
 
   try {
-    const created = await SubCategory.create({
+    const createdSubcategory = await SubCategory.create({
       name,
       category,
       questions,
     });
-    return res.json(created);
+
+    const updatedCategory = await Category.findByIdAndUpdate(category, {
+      $push: {
+        sub_categories: createdSubcategory._id,
+      },
+    });
+
+    return res.json({
+      createdSubcategory,
+      updatedCategory,
+    });
   } catch (e) {
     return res.status(500).send(e.message);
   }

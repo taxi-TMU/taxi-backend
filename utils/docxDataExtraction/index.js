@@ -5,6 +5,7 @@ const path = require("path");
 const docxParser = require("docx-parser");
 const { v4: uuidv4 } = require("uuid");
 const Question = require("../../models/questionModel");
+const SubCategory = require('../../models/subCategoryModel');
 
 const hastaLaVista = () => process.kill(process.pid, "SIGTERM");
 
@@ -78,7 +79,20 @@ fs.readdir(sourcePath, (err, files) => {
         });
 
         try {
-          return await newQuestion.save();
+          const created = await newQuestion.save();
+
+          // const test = await SubCategory.findById({_id: sub})
+          // console.log(test)
+          await SubCategory.findByIdAndUpdate
+          (sub, {
+            $push: {
+              questions: created._id,
+            },
+          });
+          return created;
+
+
+          
         } catch (e) {
           console.log(`Error while inserting a QA: ${e.message}`);
         }
@@ -86,7 +100,7 @@ fs.readdir(sourcePath, (err, files) => {
 
       Promise.all(qas)
         .then((all) => {
-          console.log(all);
+          // console.log(all);
 
           fs.writeFile(
             path.join(__dirname + `/output/${fileName}.json`),

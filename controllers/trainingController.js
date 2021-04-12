@@ -6,7 +6,7 @@ const Question = require('../models/questionModel');
 // --------------------------------------------------------------------- >> GET
 exports.get_all = async (_req, res) => {
   try {
-    const allTrainings = await Training.find({}).populate('question_set');
+    const allTrainings = await Training.find({}).populate('questions');
     return res.json(allTrainings);
   } catch (e) {
     return res.status(500).send({
@@ -21,7 +21,7 @@ exports.get_by_id = async (req, res) => {
   const { id } = req.params;
 
   try {
-    const target = await (await Training.findById(id)).populate('question_set');
+    const target = await (await Training.findById(id)).populate('questions');
     if (!target) return res.status(404).send('Entry not found');
     return res.json(target);
   } catch (e) {
@@ -35,7 +35,7 @@ exports.get_by_id = async (req, res) => {
 // -------------------------------------------------------------------- >> POST
 exports.create = async (req, res) => {
   const {
-    userId, question_set, simulation, time_start, time_end,
+    userId, questions, simulation, time_start, time_end,
   } = req.body;
 
   const errors = validationResult(req);
@@ -49,8 +49,9 @@ exports.create = async (req, res) => {
       simulation,
       time_start,
       time_end,
-      question_set,
+      questions,
     });
+
     return res.json(created);
   } catch (e) {
     return res.status(500).send({

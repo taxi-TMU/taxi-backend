@@ -1,6 +1,8 @@
+/* eslint-disable no-underscore-dangle */
 /* eslint-disable camelcase */
 const { validationResult } = require('express-validator');
 const Question = require('../models/questionModel');
+const SubCategory = require('../models/subCategoryModel');
 
 // --------------------------------------------------------------------- >> GET
 exports.get_all = async (_req, res) => {
@@ -50,13 +52,23 @@ exports.create = async (req, res) => {
   }
 
   try {
-    const created = await Question.create({
+    const createdQuestion = await Question.create({
       language,
       question_text,
       sub_category,
       answers,
     });
-    return res.json(created);
+
+    const updatedSubcategory = await SubCategory.findByIdAndUpdate(sub_category, {
+      $push: {
+        questions: createdQuestion._id,
+      },
+    });
+
+    return res.json({
+      createdQuestion,
+      updatedSubcategory,
+    });
   } catch (e) {
     return res.status(500).send(e.message);
   }
