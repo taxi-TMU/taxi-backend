@@ -14,10 +14,12 @@ const {
   create,
   update,
   delete_all,
+  get_by_subcategory_id,
 } = require('../controllers/questionController');
 
 router.get('/', get_all);
 router.get('/:id', get_by_id);
+router.get('/set/:id/:limit', get_by_subcategory_id);
 router.post('/', [validateLanguage, validateQuestion, validateSubCategoryId],
   create);
 router.put('/:id', [validateLanguage, validateQuestion, validateSubCategoryId],
