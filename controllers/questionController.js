@@ -25,6 +25,18 @@ exports.get_by_id = async (req, res) => {
   }
 };
 
+// ------------------------------------------------------ >> GET:SUBCATEGORY:ID
+exports.get_by_subcategory_id = async (req, res) => {
+  const { id, limit } = req.params;
+
+  try {
+    const target = await Question.find({ sub_category: id }).limit(Number(limit));
+    if (!target) return res.status(404).send('Entry not found');
+    return res.json(target);
+  } catch (e) {
+    return res.status(500).send(e.message);
+  }
+};
 
 // -------------------------------------------------------------------- >> POST
 exports.create = async (req, res) => {

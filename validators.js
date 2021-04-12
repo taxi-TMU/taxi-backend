@@ -64,9 +64,7 @@ module.exports = {
     .isEmpty()
     .withMessage("name can't be empty")
     .isLength({ min: 2, max: 50 })
-    .withMessage('Min 2, max 50 chars')
-    .isAlpha()
-    .withMessage('Only chars allowed'),
+    .withMessage('Min 2, max 50 chars'),
   validateCategoryId: check('category')
     .not()
     .isEmpty()

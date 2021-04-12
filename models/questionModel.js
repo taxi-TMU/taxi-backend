@@ -12,6 +12,7 @@ const questionSchema = new Schema({
   },
   sub_category: { type: ObjectId, ref: 'SubCategory', required: true },
   answers: Array, // TODO subschema?
+  trainings: [{ type: ObjectId, ref: 'Training', required: true }],
 });
 
 const Question = mongoose.model('Question', questionSchema);

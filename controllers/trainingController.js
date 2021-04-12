@@ -35,7 +35,7 @@ exports.get_by_id = async (req, res) => {
 // -------------------------------------------------------------------- >> POST
 exports.create = async (req, res) => {
   const {
-    userId, sub_category_id, simulation, time_start, time_end,
+    userId, question_set, simulation, time_start, time_end,
   } = req.body;
 
   const errors = validationResult(req);
@@ -43,17 +43,13 @@ exports.create = async (req, res) => {
     return res.status(422).send({ errors });
   }
 
-  const questions = await Question.find({
-    sub_category: sub_category_id,
-  }).limit(18);
-
   try {
     const created = await Training.create({
       userId,
       simulation,
       time_start,
       time_end,
-      question_set: questions,
+      question_set,
     });
     return res.json(created);
   } catch (e) {
