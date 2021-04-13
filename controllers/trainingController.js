@@ -43,25 +43,25 @@ exports.create = async (req, res) => {
     return res.status(422).send({ errors });
   }
 
-  const updatedQuestions = [];
-  await questions.forEach((question) => {
-    const newAnswers = [];
-    question.answers.forEach((answer) => {
-      newAnswers.push({
-        _id: answer._id,
-        text: answer.text,
-        checked: answer.checked,
-        userAnswer: false,
-      });
-    });
+  // const updatedQuestions = [];
+  // await questions.forEach((question) => {
+  //   const newAnswers = [];
+  //   question.answers.forEach((answer) => {
+  //     newAnswers.push({
+  //       _id: answer._id,
+  //       text: answer.text,
+  //       checked: answer.checked,
+  //       userAnswer: false,
+  //     });
+  //   });
 
-    updatedQuestions.push({
-      _id: question._id,
-      question_text: question.question_text,
-      sub_category: question.sub_category,
-      answers: newAnswers,
-    });
-  });
+  //   updatedQuestions.push({
+  //     _id: question._id,
+  //     question_text: question.question_text,
+  //     sub_category: question.sub_category,
+  //     answers: newAnswers,
+  //   });
+  // });
 
   try {
     const created = await Training.create({
@@ -69,7 +69,7 @@ exports.create = async (req, res) => {
       simulation,
       time_start,
       time_end,
-      questions: updatedQuestions,
+      questions,
     });
 
     return res.json(created);
