@@ -1,12 +1,13 @@
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable camelcase */
+const { v4: uuidv4 } = require('uuid');
 const { validationResult } = require('express-validator');
 const Training = require('../models/trainingModel');
 
 // --------------------------------------------------------------------- >> GET
 exports.get_all = async (_req, res) => {
   try {
-    const allTrainings = await Training.find({}).populate('questions');
+    const allTrainings = await Training.find({});
     return res.json(allTrainings);
   } catch (e) {
     return res.status(500).send({
@@ -21,9 +22,9 @@ exports.get_by_id = async (req, res) => {
   const { id } = req.params;
 
   try {
-    const target = await Training.findById(id).populate('questions');
-    if (!target) return res.status(404).send('Entry not found');
-    return res.json(target);
+    const training = await Training.findById(id);
+    if (!training) return res.status(404).send('Entry not found');
+    return res.json(training);
   } catch (e) {
     return res.status(500).send({
       msg: e.message,
@@ -43,25 +44,26 @@ exports.create = async (req, res) => {
     return res.status(422).send({ errors });
   }
 
-  // const updatedQuestions = [];
-  // await questions.forEach((question) => {
-  //   const newAnswers = [];
-  //   question.answers.forEach((answer) => {
-  //     newAnswers.push({
-  //       _id: answer._id,
-  //       text: answer.text,
-  //       checked: answer.checked,
-  //       userAnswer: false,
-  //     });
-  //   });
+  const updatedQuestions = [];
+  await questions.forEach((question) => {
+    const newAnswers = [];
+    question.answers.forEach((answer) => {
+      newAnswers.push({
+        _id: answer._id,
+        text: answer.text,
+        checked: answer.checked,
+        userAnswer: false,
+      });
+    });
 
-  //   updatedQuestions.push({
-  //     _id: question._id,
-  //     question_text: question.question_text,
-  //     sub_category: question.sub_category,
-  //     answers: newAnswers,
-  //   });
-  // });
+    updatedQuestions.push({
+      _id: uuidv4(),
+      original_id: question._id,
+      question_text: question.question_text,
+      sub_category: question.sub_category,
+      answers: newAnswers,
+    });
+  });
 
   try {
     const created = await Training.create({
@@ -69,7 +71,7 @@ exports.create = async (req, res) => {
       simulation,
       time_start,
       time_end,
-      questions,
+      questions: updatedQuestions,
     });
 
     return res.json(created);
