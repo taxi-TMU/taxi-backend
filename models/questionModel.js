@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const random = require('mongoose-random');
 
 const { Schema } = mongoose;
 const { ObjectId } = mongoose.Schema.Types;
@@ -15,16 +16,8 @@ const questionSchema = new Schema({
   trainings: [{ type: ObjectId, ref: 'Training', required: true }],
 });
 
+questionSchema.plugin(random, { path: 'r' });
+
 const Question = mongoose.model('Question', questionSchema);
 
 module.exports = Question;
-
-// _id: ObjectId
-// language: String (Iso Alpha 2 code)
-// question_text: String
-// subtopic => ObjectId subtopic
-// "answers: [{
-//   _id: String,
-//   text: String,
-//   checked: boolean
-// }]"
