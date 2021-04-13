@@ -1,7 +1,7 @@
+/* eslint-disable no-underscore-dangle */
 /* eslint-disable camelcase */
 const { validationResult } = require('express-validator');
 const Training = require('../models/trainingModel');
-const Question = require('../models/questionModel');
 
 // --------------------------------------------------------------------- >> GET
 exports.get_all = async (_req, res) => {
@@ -21,7 +21,7 @@ exports.get_by_id = async (req, res) => {
   const { id } = req.params;
 
   try {
-    const target = await (await Training.findById(id)).populate('questions');
+    const target = await Training.findById(id).populate('questions');
     if (!target) return res.status(404).send('Entry not found');
     return res.json(target);
   } catch (e) {
@@ -43,13 +43,33 @@ exports.create = async (req, res) => {
     return res.status(422).send({ errors });
   }
 
+  const updatedQuestions = [];
+  await questions.forEach((question) => {
+    const newAnswers = [];
+    question.answers.forEach((answer) => {
+      newAnswers.push({
+        _id: answer._id,
+        text: answer.text,
+        checked: answer.checked,
+        userAnswer: false,
+      });
+    });
+
+    updatedQuestions.push({
+      _id: question._id,
+      question_text: question.question_text,
+      sub_category: question.sub_category,
+      answers: newAnswers,
+    });
+  });
+
   try {
     const created = await Training.create({
       userId,
       simulation,
       time_start,
       time_end,
-      questions,
+      questions: updatedQuestions,
     });
 
     return res.json(created);
@@ -65,7 +85,7 @@ exports.create = async (req, res) => {
 exports.update = async (req, res) => {
   const { id } = req.params;
   const {
-    userId, simulation, time_start, time_end,
+    userId, simulation, time_start, time_end, questions,
   } = req.body;
 
   const errors = validationResult(req);
@@ -78,6 +98,7 @@ exports.update = async (req, res) => {
   if (simulation) toUpdate.simulation = simulation;
   if (time_start) toUpdate.time_start = time_start;
   if (time_end) toUpdate.time_end = time_end;
+  if (questions) toUpdate.questions = questions;
 
   try {
     const updatedObj = await Training.findByIdAndUpdate(id, toUpdate, {

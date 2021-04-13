@@ -80,9 +80,6 @@ fs.readdir(sourcePath, (err, files) => {
 
         try {
           const created = await newQuestion.save();
-
-          // const test = await SubCategory.findById({_id: sub})
-          // console.log(test)
           await SubCategory.findByIdAndUpdate
           (sub, {
             $push: {
