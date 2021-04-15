@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const random = require('mongoose-random');
 
 const { Schema } = mongoose;
 const { ObjectId } = mongoose.Schema.Types;
@@ -16,7 +15,6 @@ const questionSchema = new Schema({
   trainings: [{ type: ObjectId, ref: 'Training', required: true }],
 });
 
-questionSchema.plugin(random, { path: 'r' });
 
 const Question = mongoose.model('Question', questionSchema);
 

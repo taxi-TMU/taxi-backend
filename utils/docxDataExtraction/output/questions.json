@@ -1,0 +1,427 @@
+[
+  {
+    "question": "Haben Sie etwas zu beachten, wenn Sie ein Funkgerät im Kfz installiert haben?   ",
+    "answers": [
+      {
+        "_id": "9985d00c-d8cb-4dbc-b5ec-88fbff651846",
+        "text": "Ja, der Funk muss im Ausland ausgeschalten sein. ",
+        "checked": true
+      },
+      {
+        "_id": "89902b85-be4f-4fcc-ae88-2a09255cd9db",
+        "text": "Das Funkgerät darf nicht betriebsbereit sein.   ",
+        "checked": false
+      },
+      {
+        "_id": "490927ce-d1c0-4c39-9605-27fa874dfe6f",
+        "text": "Ja, der Funk muss im Ausland ganz ausgebaut sein, wenn keine Funkgenehmigung vorliegt.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was haben Sie im Ausland bezüglich des Funkgerätes in Ihrem Taxi zu beachten?",
+    "answers": [
+      {
+        "_id": "5aebd143-c48c-479d-bbc1-cb2132720686",
+        "text": "Ja, der Funk muss im Ausland ausgeschalten sein. ",
+        "checked": true
+      },
+      {
+        "_id": "55943c6e-062e-421d-ab37-51d295a4f124",
+        "text": "Ja, der Funk muss im Ausland ganz ausgebaut sein, wenn keine Funkgenehmigung vorliegt.",
+        "checked": true
+      },
+      {
+        "_id": "51446d0c-e8e7-4a93-a11d-30e81234d06b",
+        "text": "Das Funkgerät darf nicht betriebsbereit sein.   ",
+        "checked": false
+      }
+    ]
+  },
+  {
+    "question": "Muss im Ausland das Taxischild entfernt werden?  ",
+    "answers": [
+      {
+        "_id": "b1aea737-7962-468f-af02-4f1483210c47",
+        "text": "In manchen Staaten muss das Taxischild ausgeschalten, verdeckt oder sogar entfernt werden. ",
+        "checked": true
+      },
+      {
+        "_id": "96a24291-29ea-4123-86a1-d32dc3b8266d",
+        "text": "Ja, der Taxischild muss im Ausland ausgeschalten sein. ",
+        "checked": false
+      },
+      {
+        "_id": "66c9187d-337f-4fee-a170-777934c6391a",
+        "text": "Ja, der Taxischild muss im Ausland ganz ausgebaut sein, wenn keine Funkgenehmigung vorliegt. ",
+        "checked": false
+      }
+    ]
+  },
+  {
+    "question": "Was müssen Sie bei Auslandsfahrten in Hinblick auf das Taxischild und das Funkgerät beachten?",
+    "answers": [
+      {
+        "_id": "6f2e2e4d-1f0a-4524-b59e-6ff03ae0b4d0",
+        "text": "Das Dachzeichen (Taxischild) abdecken oder abnehmen. ",
+        "checked": true
+      },
+      {
+        "_id": "0910410f-1086-465f-8b31-f7cfbfadd233",
+        "text": "Das Funkgerät ausschalten oder ausbauen. ",
+        "checked": true
+      },
+      {
+        "_id": "662d5c15-0eb7-4bd4-84bf-3f647d5a7ee2",
+        "text": "Ja, der Taxischild muss im Ausland ausgeschalten sein. ",
+        "checked": false
+      },
+      {
+        "_id": "cbfd25df-1f5c-47f4-93ae-c8109271533d",
+        "text": "Das Funkgerät darf nicht betriebsbereit sein.   ",
+        "checked": false
+      }
+    ]
+  },
+  {
+    "question": "Mit welchen weiteren Kosten müssen Sie bei einer Fahrt ins Ausland rechnen?",
+    "answers": [
+      {
+        "_id": "06fcfdda-e86b-4ef0-a127-ca3137991910",
+        "text": "Autobahn- und Tunnelbenutzungsgebühren. ",
+        "checked": true
+      },
+      {
+        "_id": "ae37d05a-049c-4f78-8de5-d20bcceccda6",
+        "text": "Mautgebühren oder Vignette. ",
+        "checked": true
+      },
+      {
+        "_id": "6e27ff5c-2bf4-4fda-8769-51431d98de4a",
+        "text": "Spesen und Übernachtung.  ",
+        "checked": false
+      }
+    ]
+  },
+  {
+    "question": "Mit welchen weiteren Kosten müssen Sie bei einer Fahrt ins Ausland rechnen?",
+    "answers": [
+      {
+        "_id": "214fc2d7-b3b1-4e28-8c6e-182dc0a317e4",
+        "text": "Spesen und Übernachtung.  ",
+        "checked": false
+      },
+      {
+        "_id": "56d60951-446f-4e57-a00f-15c57e006ed8",
+        "text": "Zollkosten und Steuern. ",
+        "checked": true
+      },
+      {
+        "_id": "f53c5eb3-cd4f-4b2f-87ad-dbfaf5de95f5",
+        "text": "Überstunden, dadurch höhere Lohnkosten. ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Welche Kosten können im grenzüberschreitenden Verkehr für den Unternehmer zusätzlich entstehen?",
+    "answers": [
+      {
+        "_id": "8a0f3cf9-45a4-41a4-bca6-5a16cd66f870",
+        "text": "Mautgebühren",
+        "checked": false
+      },
+      {
+        "_id": "47f450b9-6c6e-4126-9d15-a856fea346a7",
+        "text": "Wechselgebühren",
+        "checked": false
+      },
+      {
+        "_id": "707a3815-e63b-4d28-88a4-9bc3cca758fd",
+        "text": "Übernachtungskosten für Fahrer",
+        "checked": false
+      },
+      {
+        "_id": "4d269c7e-2c03-48e1-bcfc-eab2fd84ef0a",
+        "text": "Alle Antworten sind richtig.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Welche Kosten können im grenzüberschreitenden Verkehr für den Unternehmer zusätzlich entstehen?",
+    "answers": [
+      {
+        "_id": "f3230204-780b-484b-99d5-bd310553c2ee",
+        "text": "Wechselgebühren",
+        "checked": true
+      },
+      {
+        "_id": "df4429b6-ae92-43a2-a14c-44af888d5662",
+        "text": "Übernachtungskosten für Fahrer",
+        "checked": true
+      },
+      {
+        "_id": "70c77335-09cc-4560-b069-f7c0e9f30904",
+        "text": "evtl. Visa gebühren",
+        "checked": false
+      },
+      {
+        "_id": "0d0e66ce-7002-4558-98f6-f5c8610bd132",
+        "text": "Alle Antworten sind richtig.",
+        "checked": false
+      }
+    ]
+  },
+  {
+    "question": "Kann mir die ausländische Polizei ein Bußgeld verhängen?     ",
+    "answers": [
+      {
+        "_id": "3cede7fc-ad1b-4d39-95b1-adda266f6ae0",
+        "text": "Ja",
+        "checked": true
+      },
+      {
+        "_id": "6603cfdf-8d5a-4922-b204-ecd34c274c43",
+        "text": "Nein",
+        "checked": false
+      },
+      {
+        "_id": "1c1965ee-419f-482a-823a-827a7c9bb728",
+        "text": "Hängt von bilateralen Abkommen ab",
+        "checked": false
+      }
+    ]
+  },
+  {
+    "question": " Wer müsste bei meiner Verhaftung im Ausland benachrichtigt werden?",
+    "answers": [
+      {
+        "_id": "11e3ce34-46f5-47d3-8951-64895ba56984",
+        "text": "Die ausländische Polizei",
+        "checked": false
+      },
+      {
+        "_id": "b2626442-3c51-4597-b02e-d294d9c85df2",
+        "text": "Die Deutsche Polizei",
+        "checked": false
+      },
+      {
+        "_id": "68f99066-9c7b-4667-b085-922d33bee611",
+        "text": "Die Deutsche Botschaft.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Sie befördern einen Fahrgast im Ausland. Plötzlich passiert ein Unfall. Sind sie weiterhin verpflichtet den Fahrgast zu seinem Ziel zu bringen?",
+    "answers": [
+      {
+        "_id": "aefe7274-91cd-4b14-b913-e14e8810b470",
+        "text": "Es besteht weiterhin die Beförderungspflicht.   ",
+        "checked": true
+      },
+      {
+        "_id": "8f68d2c7-74be-47eb-a63f-0bf4051e21c3",
+        "text": "Es besteht die Möglichkeit, ohne weitere Kosten für den Fahrgast ein Subunternehmen zu organisieren.",
+        "checked": false
+      },
+      {
+        "_id": "ae838af2-b8d9-4610-a592-de073a47ae06",
+        "text": "Es besteht die Möglichkeit, ohne weitere Kosten für den Fahrgast ein Ersatzfahrzeug zu organisieren.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Sie befördern einen Fahrgast im Ausland. Plötzlich passiert ein Unfall. Was passiert mit dem Beförderungsvertrag?",
+    "answers": [
+      {
+        "_id": "161485af-7aa9-444c-801e-1cd1db6a6f2c",
+        "text": "Es besteht weiterhin die Beförderungspflicht.   ",
+        "checked": true
+      },
+      {
+        "_id": "67ae4afa-c5b8-49f3-b02f-18437f9ce8ff",
+        "text": "Es besteht die Möglichkeit, ohne weitere Kosten für den Fahrgast ein Ersatzfahrzeug zu organisieren.",
+        "checked": false
+      },
+      {
+        "_id": "ef00a5f3-6e9a-4e3b-9381-a056be614fbd",
+        "text": "Nur mit Einverständnis des Fahrgastes kann der Auftrag storniert werden.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Wer soll bei einem Unfall im Ausland zusätzlich hinzugezogen werden?",
+    "answers": [
+      {
+        "_id": "c06e8a80-0e39-4d55-b0f3-13bc42b5f25c",
+        "text": "Die ausländische Polizei",
+        "checked": true
+      },
+      {
+        "_id": "fcfa66aa-fc14-4753-acf8-d87ee40260f7",
+        "text": "Die Deutsche Polizei",
+        "checked": false
+      },
+      {
+        "_id": "caf3802b-17bc-4e07-9eee-bd6ad87c5e2d",
+        "text": "Die Deutsche Botschaft.",
+        "checked": false
+      }
+    ]
+  },
+  {
+    "question": "Welche Stellen müssen bei einem Unfall mit leichten Blechschäden informiert werden (in Außland)?",
+    "answers": [
+      {
+        "_id": "8dd5904b-85c6-4f90-b04f-081eabaaf9f9",
+        "text": "Kfz Versicherung",
+        "checked": true
+      },
+      {
+        "_id": "55639de9-f23c-439f-9a0a-cb46954bc18a",
+        "text": "Evtl. Polizei",
+        "checked": true
+      },
+      {
+        "_id": "9c20eb52-56d4-48c9-b2a4-cee8aa977373",
+        "text": "Evtl. Botschaft/Konsulat",
+        "checked": false
+      }
+    ]
+  },
+  {
+    "question": "Welche Stellen müssen bei einem Unfall mit verletzten Personen informiert werden(in Außland)?  ",
+    "answers": [
+      {
+        "_id": "d16ee828-b8c9-4e79-ae12-7e9602b39ed5",
+        "text": "Kfz Versicherung",
+        "checked": true
+      },
+      {
+        "_id": "fd764d22-7509-4e65-b996-7c5aca1712bd",
+        "text": "Polizei",
+        "checked": true
+      },
+      {
+        "_id": "e0e17e85-63ce-40d7-8a44-4ae85010b0c3",
+        "text": "Evtl. Botschaft/Konsulat",
+        "checked": false
+      },
+      {
+        "_id": "4042a3bb-c3d9-469b-ab8c-e1b5521d2f4e",
+        "text": "Genehmigungsbehörde",
+        "checked": false
+      },
+      {
+        "_id": "17664bd9-4f27-49f1-ae00-50a2811fb71e",
+        "text": "Berufsgenossenschaft",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was muss beim grenzüberschreitenden Verkehr bezüglich der Mehrwertsteuer beachtet werden?  ",
+    "answers": [
+      {
+        "_id": "26a86c69-eb95-46f5-9249-f473873453f1",
+        "text": "Nur die Inlandsstrecke unterliegt der deutschen Umsatzsteuer. ",
+        "checked": true
+      },
+      {
+        "_id": "d498fd51-100d-498d-8e6f-0bb40767bb74",
+        "text": "Nur die im Ausland gefahrenen Kilometer müssen im Ausland versteuert werden.",
+        "checked": false
+      },
+      {
+        "_id": "26658e10-ce9d-40c9-b053-d1628868c1b4",
+        "text": "Die Abgabenstelle ist im bilateralen Abkommen einsehbar.  ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Beschreiben Sie die Umsatzsteuerregelung bei Fahrten ins Ausland?",
+    "answers": [
+      {
+        "_id": "1b9cd9b2-6cb8-4760-8c0d-4aca8981275e",
+        "text": "Bei grenzüberschreitender Beförderung unterliegt nur die Inlandsstrecke der deutschen Umsatzsteuer.  ",
+        "checked": true
+      },
+      {
+        "_id": "aba189f0-c5ac-4b3c-93dd-43c36f0927b8",
+        "text": " %  (unterliegt nur die Auslandsstrecke)",
+        "checked": false
+      },
+      {
+        "_id": "7e650e8c-a7e2-466a-b715-d0482c42ab4c",
+        "text": "Die Auslandsstrecke unterliegt dem nationalen Recht des jeweiligen Staates.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Wo müssen die Auslandsumsätze versteuert werden? ",
+    "answers": [
+      {
+        "_id": "7a0f04d8-9139-4f38-ac91-edddc3aa20ca",
+        "text": "In Deutschland",
+        "checked": false
+      },
+      {
+        "_id": "de1e5bb5-54c4-4352-8627-880cac4c767e",
+        "text": "Im Ausland.",
+        "checked": true
+      },
+      {
+        "_id": "817e7f8b-e627-465e-b877-d278e1f4d698",
+        "text": "Die Abgabenstelle ist im bilateralen Abkommen einsehbar.  ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Mit welchem Prozentsatz muss die Beförderung von Personen im Inland berechnet werden?",
+    "answers": [
+      {
+        "_id": "0aff7b91-566c-4715-80b5-08d52de959ad",
+        "text": "Bei grenzüberschreitender Beförderung unterliegt nur die Inlandsstrecke der deutschen Umsatzsteuer.  ",
+        "checked": true
+      },
+      {
+        "_id": "61f6f28e-b39a-46a5-bc3a-fb0915697f43",
+        "text": " %  (unterliegt nur die Auslandsstrecke)",
+        "checked": false
+      },
+      {
+        "_id": "09754f69-9d98-4d7c-9ca1-36e8b2dcc0c9",
+        "text": "Die Auslandsstrecke unterliegt dem nationalen Recht des jeweiligen Staates.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Wie viele Kilometer müssen im Ausland versteuert werden? ",
+    "answers": [
+      {
+        "_id": "11b231c2-a9b5-46f2-bffd-010acc3bd73b",
+        "text": "Nur die im Ausland gefahrenen Kilometer müssen im Ausland versteuert werden.",
+        "checked": true
+      },
+      {
+        "_id": "c2a737df-4568-40e1-8deb-2aa2a3b6534e",
+        "text": " Kilometer.",
+        "checked": false
+      },
+      {
+        "_id": "cbf91180-f448-4e5d-ae69-99d51c7227fe",
+        "text": " Kilometer",
+        "checked": false
+      }
+    ]
+  }
+]
