@@ -8,7 +8,8 @@ const SubCategory = require('../models/subCategoryModel');
 exports.get_all = async (_req, res) => {
   try {
     const allQuestions = await Question.find({});
-    res.json(allQuestions);
+    const shuffled = allQuestions.sort(() => 0.5 - Math.random());
+    res.json(shuffled);
   } catch (e) {
     res.status(500).send(e.message);
   }
@@ -34,7 +35,8 @@ exports.get_by_subcategory_id = async (req, res) => {
   try {
     const target = await Question.find({ sub_category: id }).limit(Number(limit));
     if (!target) return res.status(404).send('Entry not found');
-    return res.json(target);
+    const shuffled = target.sort(() => 0.5 - Math.random());
+    return res.json(shuffled);
   } catch (e) {
     return res.status(500).send(e.message);
   }
