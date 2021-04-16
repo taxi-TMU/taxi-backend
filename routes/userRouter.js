@@ -19,11 +19,11 @@ const {
 
 router.get('/', get_all);
 router.get('/:id', get_by_id);
+
+router.put('/changePassword', [validatePassword], update_password);
 router.put(
   '/:id',
   [validateFirstName, validateLastName, validateEmail],
   update,
 );
-router.put('/changePassword', [validatePassword], update_password);
-
 module.exports = router;

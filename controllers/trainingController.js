@@ -23,7 +23,12 @@ exports.get_by_id = async (req, res) => {
 
   try {
     const training = await Training.findById(id);
-    if (!training) return res.status(404).send('Entry not found');
+    if (!training) {
+      return res.status(404).send({
+        msg: 'Entry not found',
+        param: 'error',
+      });
+    }
     return res.json(training);
   } catch (e) {
     return res.status(500).send({
@@ -99,8 +104,8 @@ exports.update = async (req, res) => {
   if (userId) toUpdate.userId = userId;
   if (simulation) toUpdate.simulation = simulation;
   if (time_start) toUpdate.time_start = time_start;
-  if (time_end) toUpdate.time_end = time_end;
   if (questions) toUpdate.questions = questions;
+  toUpdate.time_end = Date.now();
 
   try {
     const updatedObj = await Training.findByIdAndUpdate(id, toUpdate, {
