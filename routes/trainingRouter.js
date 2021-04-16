@@ -15,6 +15,6 @@ const {
 router.get('/', get_all);
 router.get('/:id', get_by_id);
 router.post('/', [validateUserId, validateSimulation], create);
-router.put('/:id', [validateUserId, validateSimulation], update);
+router.put('/:id', update);
 
 module.exports = router;

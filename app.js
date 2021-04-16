@@ -16,6 +16,7 @@ const questionRouter = require('./routes/questionRouter');
 const categoryRouter = require('./routes/categoryRouter');
 const subCategoryRouter = require('./routes/subCategoryRouter');
 const trainingRouter = require('./routes/trainingRouter');
+const testRunRouter = require('./routes/testRunRouter');
 
 app.use(cors({ exposedHeaders: 'x-authorization-token' }));
 app.use(logger('dev'));
@@ -30,5 +31,6 @@ app.use('/api/v1/question', questionRouter);
 app.use('/api/v1/category', categoryRouter);
 app.use('/api/v1/subcategory', subCategoryRouter);
 app.use('/api/v1/training', trainingRouter);
+app.use('/api/v1/testrun', testRunRouter);
 
 module.exports = app;

@@ -92,7 +92,7 @@ exports.create = async (req, res) => {
 exports.update = async (req, res) => {
   const { id } = req.params;
   const {
-    userId, simulation, time_start, time_end, questions,
+    questions,
   } = req.body;
 
   const errors = validationResult(req);
@@ -101,10 +101,7 @@ exports.update = async (req, res) => {
   }
 
   const toUpdate = {};
-  if (userId) toUpdate.userId = userId;
-  if (simulation) toUpdate.simulation = simulation;
-  if (time_start) toUpdate.time_start = time_start;
-  if (questions) toUpdate.questions = questions;
+  toUpdate.questions = questions;
   toUpdate.time_end = Date.now();
 
   try {

@@ -33,9 +33,9 @@ exports.get_by_subcategory_id = async (req, res) => {
   const { id, limit } = req.params;
 
   try {
-    const target = await Question.find({ sub_category: id }).limit(Number(limit));
+    const target = await Question.find({ sub_category: id });
     if (!target) return res.status(404).send('Entry not found');
-    const shuffled = target.sort(() => 0.5 - Math.random());
+    const shuffled = target.sort(() => 0.5 - Math.random()).slice(0, limit);
     return res.json(shuffled);
   } catch (e) {
     return res.status(500).send(e.message);
