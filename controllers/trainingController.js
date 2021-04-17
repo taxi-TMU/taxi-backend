@@ -38,6 +38,52 @@ exports.get_by_id = async (req, res) => {
   }
 };
 
+// ------------------------------------------------------------- >> GET:USER:ID
+exports.user_statistics = async (req, res) => {
+  const { id } = req.params;
+
+  try {
+    const all_results = await Training.find({ userId: id });
+    const trainings = [];
+    const simulations = [];
+
+    all_results.forEach((result) => {
+      if (result.simulation) simulations.push(result);
+      trainings.push(result);
+    });
+
+    const countPassed = (quizzes) => {
+      let passed = 0;
+
+      quizzes.forEach((quiz) => {
+        let rightones = 0;
+        quiz.questions.forEach((question) => {
+          if (question.userAnswer) rightones += 1;
+        });
+        if (rightones >= quiz.questions.length / 2) passed += 1;
+      });
+      return passed;
+    };
+
+    return res.json({
+      total: (simulations.length + trainings.length),
+      simulations: {
+        total_simulations: simulations.length,
+        passed: await countPassed(simulations),
+      },
+      trainings: {
+        total_trainings: trainings.length,
+        passed: await countPassed(trainings),
+      },
+    });
+  } catch (e) {
+    return res.status(500).send({
+      msg: e.message,
+      param: 'error',
+    });
+  }
+};
+
 // -------------------------------------------------------------------- >> POST
 exports.create = async (req, res) => {
   const {
