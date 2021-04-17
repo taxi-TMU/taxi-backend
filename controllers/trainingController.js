@@ -4,6 +4,28 @@ const { v4: uuidv4 } = require('uuid');
 const { validationResult } = require('express-validator');
 const Training = require('../models/trainingModel');
 
+const checkIfTestPassed = (quiz) => {
+  let rightones = 0;
+  quiz.questions.forEach((question) => {
+    if (question.userAnswer) rightones += 1;
+  });
+  if (rightones >= quiz.questions.length / 2) return true;
+  return false;
+};
+
+const countPassed = (quizzes) => {
+  let passed = 0;
+
+  quizzes.forEach((quiz) => {
+    let rightones = 0;
+    quiz.questions.forEach((question) => {
+      if (question.userAnswer) rightones += 1;
+    });
+    if (rightones >= quiz.questions.length / 2) passed += 1;
+  });
+  return passed;
+};
+
 // --------------------------------------------------------------------- >> GET
 exports.get_all = async (_req, res) => {
   try {
@@ -29,7 +51,15 @@ exports.get_by_id = async (req, res) => {
         param: 'error',
       });
     }
-    return res.json(training);
+    return res.json({
+      _id: training._id,
+      userId: training.userId,
+      simulation: training.simulation,
+      time_start: training.time_start,
+      time_end: training.time_end,
+      passed: await checkIfTestPassed(training),
+      questions: training.questions,
+    });
   } catch (e) {
     return res.status(500).send({
       msg: e.message,
@@ -51,19 +81,6 @@ exports.user_statistics = async (req, res) => {
       if (result.simulation) simulations.push(result);
       trainings.push(result);
     });
-
-    const countPassed = (quizzes) => {
-      let passed = 0;
-
-      quizzes.forEach((quiz) => {
-        let rightones = 0;
-        quiz.questions.forEach((question) => {
-          if (question.userAnswer) rightones += 1;
-        });
-        if (rightones >= quiz.questions.length / 2) passed += 1;
-      });
-      return passed;
-    };
 
     return res.json({
       total: (simulations.length + trainings.length),
