@@ -165,7 +165,6 @@ exports.update = async (req, res) => {
 
   const toUpdate = {};
   toUpdate.questions = questions;
-  toUpdate.time_end = Date.now();
 
   try {
     const updatedObj = await Training.findByIdAndUpdate(id, toUpdate, {
