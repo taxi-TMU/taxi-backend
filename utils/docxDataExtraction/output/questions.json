@@ -1,425 +1,420 @@
 [
   {
-    "question": "Haben Sie etwas zu beachten, wenn Sie ein Funkgerät im Kfz installiert haben?   ",
+    "question": "Was sollten Sie den Fahrgast vor einer Fahrt ins Ausland bezüglich der Grenzüberschreitung fragen?",
     "answers": [
       {
-        "_id": "9985d00c-d8cb-4dbc-b5ec-88fbff651846",
-        "text": "Ja, der Funk muss im Ausland ausgeschalten sein. ",
-        "checked": true
-      },
-      {
-        "_id": "89902b85-be4f-4fcc-ae88-2a09255cd9db",
-        "text": "Das Funkgerät darf nicht betriebsbereit sein.   ",
+        "_id": "5d3a7837-165e-48c5-b3e7-5d5e9dd411f0",
+        "text": "Haben Sie Alkohol konsumieren.",
         "checked": false
       },
       {
-        "_id": "490927ce-d1c0-4c39-9605-27fa874dfe6f",
-        "text": "Ja, der Funk muss im Ausland ganz ausgebaut sein, wenn keine Funkgenehmigung vorliegt.",
+        "_id": "acc44f93-2d5e-4dc7-abb4-003c43ada37f",
+        "text": "Haben Sie zollpflichtige Ware.",
+        "checked": true
+      },
+      {
+        "_id": "c95db974-7a09-436f-bb79-ff4f907f2e19",
+        "text": "Haben Sie gültige Ausweisdokumente dabei.",
         "checked": true
       }
     ]
   },
   {
-    "question": "Was haben Sie im Ausland bezüglich des Funkgerätes in Ihrem Taxi zu beachten?",
+    "question": "Was sollte bezüglich des Gepäcks Ihres Fahrgastes gefragt werden?",
     "answers": [
       {
-        "_id": "5aebd143-c48c-479d-bbc1-cb2132720686",
-        "text": "Ja, der Funk muss im Ausland ausgeschalten sein. ",
+        "_id": "10599e45-522e-47f2-9a7e-bf79a4dd3437",
+        "text": "Haben Sie gültige Ausweisdokumente dabei.",
+        "checked": false
+      },
+      {
+        "_id": "75095025-24db-4000-a23e-61e2560d5809",
+        "text": "Haben Sie zollpflichtige Ware.",
         "checked": true
       },
       {
-        "_id": "55943c6e-062e-421d-ab37-51d295a4f124",
-        "text": "Ja, der Funk muss im Ausland ganz ausgebaut sein, wenn keine Funkgenehmigung vorliegt.",
-        "checked": true
-      },
-      {
-        "_id": "51446d0c-e8e7-4a93-a11d-30e81234d06b",
-        "text": "Das Funkgerät darf nicht betriebsbereit sein.   ",
+        "_id": "8b4532f4-9e9f-4205-a38a-02516b75080b",
+        "text": "Haben Sie Alkohol konsumieren.",
         "checked": false
       }
     ]
   },
   {
-    "question": "Muss im Ausland das Taxischild entfernt werden?  ",
+    "question": "Was ist bzgl. mitgeführte Koffer oder Pakete seitens des Fahrers zu beachten?",
     "answers": [
       {
-        "_id": "b1aea737-7962-468f-af02-4f1483210c47",
-        "text": "In manchen Staaten muss das Taxischild ausgeschalten, verdeckt oder sogar entfernt werden. ",
+        "_id": "4067eaea-d385-4b6b-9abc-d9edc7b92bec",
+        "text": "Koffer oder Pakete  mit unbekannten Inhalt sind grundsätzlich an der Grenze den Beamten anzugeben.",
         "checked": true
       },
       {
-        "_id": "96a24291-29ea-4123-86a1-d32dc3b8266d",
-        "text": "Ja, der Taxischild muss im Ausland ausgeschalten sein. ",
+        "_id": "4984b5d4-6155-4498-9f63-f67a9e72b282",
+        "text": "Das gleiche gilt bei der Rückfahrt für den Fall, dass der Fahrgast dem Fahrer ein Pakete oder Gepäck mitgibt. ",
         "checked": false
       },
       {
-        "_id": "66c9187d-337f-4fee-a170-777934c6391a",
-        "text": "Ja, der Taxischild muss im Ausland ganz ausgebaut sein, wenn keine Funkgenehmigung vorliegt. ",
-        "checked": false
-      }
-    ]
-  },
-  {
-    "question": "Was müssen Sie bei Auslandsfahrten in Hinblick auf das Taxischild und das Funkgerät beachten?",
-    "answers": [
-      {
-        "_id": "6f2e2e4d-1f0a-4524-b59e-6ff03ae0b4d0",
-        "text": "Das Dachzeichen (Taxischild) abdecken oder abnehmen. ",
-        "checked": true
-      },
-      {
-        "_id": "0910410f-1086-465f-8b31-f7cfbfadd233",
-        "text": "Das Funkgerät ausschalten oder ausbauen. ",
-        "checked": true
-      },
-      {
-        "_id": "662d5c15-0eb7-4bd4-84bf-3f647d5a7ee2",
-        "text": "Ja, der Taxischild muss im Ausland ausgeschalten sein. ",
-        "checked": false
-      },
-      {
-        "_id": "cbfd25df-1f5c-47f4-93ae-c8109271533d",
-        "text": "Das Funkgerät darf nicht betriebsbereit sein.   ",
-        "checked": false
-      }
-    ]
-  },
-  {
-    "question": "Mit welchen weiteren Kosten müssen Sie bei einer Fahrt ins Ausland rechnen?",
-    "answers": [
-      {
-        "_id": "06fcfdda-e86b-4ef0-a127-ca3137991910",
-        "text": "Autobahn- und Tunnelbenutzungsgebühren. ",
-        "checked": true
-      },
-      {
-        "_id": "ae37d05a-049c-4f78-8de5-d20bcceccda6",
-        "text": "Mautgebühren oder Vignette. ",
-        "checked": true
-      },
-      {
-        "_id": "6e27ff5c-2bf4-4fda-8769-51431d98de4a",
-        "text": "Spesen und Übernachtung.  ",
-        "checked": false
-      }
-    ]
-  },
-  {
-    "question": "Mit welchen weiteren Kosten müssen Sie bei einer Fahrt ins Ausland rechnen?",
-    "answers": [
-      {
-        "_id": "214fc2d7-b3b1-4e28-8c6e-182dc0a317e4",
-        "text": "Spesen und Übernachtung.  ",
-        "checked": false
-      },
-      {
-        "_id": "56d60951-446f-4e57-a00f-15c57e006ed8",
-        "text": "Zollkosten und Steuern. ",
-        "checked": true
-      },
-      {
-        "_id": "f53c5eb3-cd4f-4b2f-87ad-dbfaf5de95f5",
-        "text": "Überstunden, dadurch höhere Lohnkosten. ",
+        "_id": "046a1fe8-3357-476a-81d4-8ff706f12f0b",
+        "text": "Die Zollbestimmungen sind zu beachten. ",
         "checked": true
       }
     ]
   },
   {
-    "question": "Welche Kosten können im grenzüberschreitenden Verkehr für den Unternehmer zusätzlich entstehen?",
+    "question": "Auf was ist bei der Mitnahme von Haustieren ins Ausland zu achten?",
     "answers": [
       {
-        "_id": "8a0f3cf9-45a4-41a4-bca6-5a16cd66f870",
-        "text": "Mautgebühren",
+        "_id": "31f06c10-fd79-4ad1-85f0-82df69f78322",
+        "text": "Mikrochip ",
+        "checked": true
+      },
+      {
+        "_id": "9117cc25-8be6-48c5-8d41-62341d54e4ff",
+        "text": "gültige Impfpapiere ",
         "checked": false
       },
       {
-        "_id": "47f450b9-6c6e-4126-9d15-a856fea346a7",
-        "text": "Wechselgebühren",
+        "_id": "95e5741a-a8cf-439d-a1c6-e1f0c96e0399",
+        "text": "Hundeleine ",
         "checked": false
       },
       {
-        "_id": "707a3815-e63b-4d28-88a4-9bc3cca758fd",
-        "text": "Übernachtungskosten für Fahrer",
-        "checked": false
-      },
-      {
-        "_id": "4d269c7e-2c03-48e1-bcfc-eab2fd84ef0a",
-        "text": "Alle Antworten sind richtig.",
+        "_id": "040660c4-8dab-419a-bb2c-678b49d6a60b",
+        "text": "Eu Heimtierausweis ",
         "checked": true
       }
     ]
   },
   {
-    "question": "Welche Kosten können im grenzüberschreitenden Verkehr für den Unternehmer zusätzlich entstehen?",
+    "question": "Unter welchen besonderen Bedingungen dürfen Haustiere mit ins Ausland genommen werden?  ",
     "answers": [
       {
-        "_id": "f3230204-780b-484b-99d5-bd310553c2ee",
-        "text": "Wechselgebühren",
-        "checked": true
-      },
-      {
-        "_id": "df4429b6-ae92-43a2-a14c-44af888d5662",
-        "text": "Übernachtungskosten für Fahrer",
-        "checked": true
-      },
-      {
-        "_id": "70c77335-09cc-4560-b069-f7c0e9f30904",
-        "text": "evtl. Visa gebühren",
+        "_id": "3e09e240-2602-47a2-a55a-ac3249efe20a",
+        "text": "Mikrochip ",
         "checked": false
       },
       {
-        "_id": "0d0e66ce-7002-4558-98f6-f5c8610bd132",
-        "text": "Alle Antworten sind richtig.",
+        "_id": "107fbdbc-5481-4a3c-bdf6-790c970d0a38",
+        "text": "gültige Impfpapiere ",
+        "checked": false
+      },
+      {
+        "_id": "1597cf60-d48a-4edc-9b30-add95444dbb4",
+        "text": "Hundeleine ",
+        "checked": true
+      },
+      {
+        "_id": "74895110-9e4a-43a7-9b53-4cacfcea7056",
+        "text": "Eu Heimtierausweis ",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Unter welchen besonderen Bedingungen dürfen Haustiere mit ins Ausland genommen werden?  ",
+    "answers": [
+      {
+        "_id": "972ff877-8c5e-41ea-8a6c-ffa0e70e521e",
+        "text": "Jedes Tier benötigt zur Identifikation eine Kennzeichnungsnummer. Sie wird mit einem Mikrochip eingesetzt.",
+        "checked": true
+      },
+      {
+        "_id": "779419cd-3778-45a4-b204-fc0c837c7d3e",
+        "text": "Wenn für das Tier gültige Impfpapiere vorliegen.",
+        "checked": false
+      },
+      {
+        "_id": "3e958a34-92de-47fe-8654-b25040334063",
+        "text": "Je nach Tier eine Leine evtl. ein Beißkorb.",
+        "checked": false
+      },
+      {
+        "_id": "d2541211-77a0-4bd3-95b5-a24cbf0a6090",
+        "text": "Heimtierausweis",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Müssen Taxen und Mietwagen das D-Nationalitätskennzeichen im grenzüberschreitenden Verkehr am Fahrzeugheck führen?   ",
+    "answers": [
+      {
+        "_id": "8268a67f-d7ee-42e8-b662-424b631310e0",
+        "text": "Nicht immer, innerhalb der Eu wird durch entsprechende Verkehrsminister Vereinbarung mittlerweile auf diese +Vorschrift verzichtet, wenn das Fahrzeug mit dem &quot;Euro-Kennzeichen&quot; ausgerüstet ist. ",
+        "checked": true
+      },
+      {
+        "_id": "e197d1e6-9616-457b-b504-1e2b6ec58c62",
+        "text": "Die &quot;Euro-Kennzeichen&quot; Regelung gilt auch für die Schweiz und Liechtenstein.",
         "checked": false
       }
     ]
   },
   {
-    "question": "Kann mir die ausländische Polizei ein Bußgeld verhängen?     ",
+    "question": "Welche Papiere müssen Sie bei einer Fahrt ins Ausland bei sich haben?",
     "answers": [
       {
-        "_id": "3cede7fc-ad1b-4d39-95b1-adda266f6ae0",
-        "text": "Ja",
+        "_id": "2e8414e2-f167-4933-a7a4-61d0eec83823",
+        "text": "Genehmigungsurkunde",
+        "checked": false
+      },
+      {
+        "_id": "de1fee82-57fb-4b5a-bbc4-9ebf8b91939a",
+        "text": "Fahrzeugschein",
         "checked": true
       },
       {
-        "_id": "6603cfdf-8d5a-4922-b204-ecd34c274c43",
+        "_id": "ee6c4c9f-ed14-47fd-9689-f516511253bc",
+        "text": "Internationale Grüne Versicherungskarte ",
+        "checked": false
+      }
+    ]
+  },
+  {
+    "question": "Welche Dokumente sind beim grenzüberschreitenden Taxi- und Mietwagenverkehr zwingend mitzuführen, bei welchen empfiehlt es sich?",
+    "answers": [
+      {
+        "_id": "02b59efc-0b62-4582-bd7d-ff3eed57998b",
+        "text": "Personalausweis oder Reisepass",
+        "checked": true
+      },
+      {
+        "_id": "9b5c07dd-9556-443a-b605-ec1081a56343",
+        "text": "Allgemeine Fahrerlaubnis",
+        "checked": true
+      },
+      {
+        "_id": "178f1fce-ad19-4d21-85c4-8d4e742df82c",
+        "text": "Führerschein und Fahrerlaubnis zur Personenbeförderung",
+        "checked": false
+      }
+    ]
+  },
+  {
+    "question": "Wozu dient die Grüne Versicherungskarte (Internationale Versicherungskarte für den Kraftverkehr)?",
+    "answers": [
+      {
+        "_id": "2b0587bc-5612-4663-8815-bd1026996813",
+        "text": "Die Grüne Karte dient im Ausland als Nachweis für den Kfz-Haftpflichtschutz.",
+        "checked": true
+      },
+      {
+        "_id": "a6c2ba92-ddc6-40c3-92d0-838137203029",
+        "text": "In alle EULändern muss man sie allerdings nicht mehr mitführen.",
+        "checked": false
+      },
+      {
+        "_id": "3182b13e-35a7-484f-9c38-15dcf7b4aaef",
+        "text": "In den meisten EU-Ländern muss man sie allerdings nicht mehr mitführen.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Was passiert, wenn Sie den Auszug aus der Genehmigungsurkunde nicht mit sich führen?",
+    "answers": [
+      {
+        "_id": "b5ea9ccd-9837-430c-a3f2-8e1e432c4183",
+        "text": "Die Grenzpolizei sind berechtigt Kraftfahrzeuge, ohne Genehmigung zurückzuweisen.",
+        "checked": false
+      },
+      {
+        "_id": "2707e540-c3ea-4ca8-b946-e44f26dd55d9",
+        "text": "Die Zollstellen sind berechtigt Kraftfahrzeuge, ohne Genehmigung zurückzuweisen.",
+        "checked": false
+      },
+      {
+        "_id": "16010a5f-4f68-412e-96fc-cf436360b935",
+        "text": "Die Grenzpolizei und die Zollstellen sind berechtigt Kraftfahrzeuge, ohne Genehmigung zurückzuweisen.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Darf die Grenzpolizei Fahrzeuge zurückzuweisen, welchen die notwendigen Papiere für die Einreise fehlen?  ",
+    "answers": [
+      {
+        "_id": "05852bec-a6e5-476e-9b84-be72c9ec80ad",
+        "text": "ja.",
+        "checked": true
+      },
+      {
+        "_id": "8915cc47-63c9-4bfd-8715-f1059121ee53",
+        "text": "Nein.",
+        "checked": false
+      },
+      {
+        "_id": "4622f674-3104-4b30-b99e-d5b360668483",
+        "text": "In besonderen Situationen sie können.",
+        "checked": false
+      }
+    ]
+  },
+  {
+    "question": "Welches Gewicht fällt unter die Klasse III?",
+    "answers": [
+      {
+        "_id": "5b822c4d-5cdc-48bf-8c98-bcdb1660a3ef",
+        "text": "22 bis 36 kg",
+        "checked": true
+      },
+      {
+        "_id": "28596ea6-00a7-4228-ae7a-88849041c37e",
+        "text": "25 bis 36 kg",
+        "checked": false
+      },
+      {
+        "_id": "afc685c5-31c8-4fdc-a91c-af7378d3ec90",
+        "text": "15 bis 25 kg",
+        "checked": false
+      }
+    ]
+  },
+  {
+    "question": "Darf die Babyschale mit einem Baby von 7 Monaten in Fahrtrichtung befestigt werden?",
+    "answers": [
+      {
+        "_id": "5262e782-a6f0-4409-ba98-68b59de013f7",
+        "text": "Ja.",
+        "checked": false
+      },
+      {
+        "_id": "0215777e-695c-43cf-b73f-7f678d365916",
+        "text": "Nein.",
+        "checked": false
+      },
+      {
+        "_id": "0924330f-3ba5-4824-b831-d00b757d3274",
+        "text": "Nein, nur gegen die Fahrtrichtung.",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "question": "Gelten die Ausnahmeregelungen von Kinderrückhalteeinrichtungen auch im Mietwagenverkehr?",
+    "answers": [
+      {
+        "_id": "c0739472-c8d5-4368-ac9a-a37cd34eb849",
+        "text": "Ja.",
+        "checked": false
+      },
+      {
+        "_id": "1d4f85f8-3dfa-438c-9fbf-ee32d6c88b8d",
         "text": "Nein",
-        "checked": false
-      },
-      {
-        "_id": "1c1965ee-419f-482a-823a-827a7c9bb728",
-        "text": "Hängt von bilateralen Abkommen ab",
-        "checked": false
-      }
-    ]
-  },
-  {
-    "question": " Wer müsste bei meiner Verhaftung im Ausland benachrichtigt werden?",
-    "answers": [
-      {
-        "_id": "11e3ce34-46f5-47d3-8951-64895ba56984",
-        "text": "Die ausländische Polizei",
-        "checked": false
-      },
-      {
-        "_id": "b2626442-3c51-4597-b02e-d294d9c85df2",
-        "text": "Die Deutsche Polizei",
-        "checked": false
-      },
-      {
-        "_id": "68f99066-9c7b-4667-b085-922d33bee611",
-        "text": "Die Deutsche Botschaft.",
-        "checked": true
-      }
-    ]
-  },
-  {
-    "question": "Sie befördern einen Fahrgast im Ausland. Plötzlich passiert ein Unfall. Sind sie weiterhin verpflichtet den Fahrgast zu seinem Ziel zu bringen?",
-    "answers": [
-      {
-        "_id": "aefe7274-91cd-4b14-b913-e14e8810b470",
-        "text": "Es besteht weiterhin die Beförderungspflicht.   ",
         "checked": true
       },
       {
-        "_id": "8f68d2c7-74be-47eb-a63f-0bf4051e21c3",
-        "text": "Es besteht die Möglichkeit, ohne weitere Kosten für den Fahrgast ein Subunternehmen zu organisieren.",
-        "checked": false
-      },
-      {
-        "_id": "ae838af2-b8d9-4610-a592-de073a47ae06",
-        "text": "Es besteht die Möglichkeit, ohne weitere Kosten für den Fahrgast ein Ersatzfahrzeug zu organisieren.",
-        "checked": true
-      }
-    ]
-  },
-  {
-    "question": "Sie befördern einen Fahrgast im Ausland. Plötzlich passiert ein Unfall. Was passiert mit dem Beförderungsvertrag?",
-    "answers": [
-      {
-        "_id": "161485af-7aa9-444c-801e-1cd1db6a6f2c",
-        "text": "Es besteht weiterhin die Beförderungspflicht.   ",
-        "checked": true
-      },
-      {
-        "_id": "67ae4afa-c5b8-49f3-b02f-18437f9ce8ff",
-        "text": "Es besteht die Möglichkeit, ohne weitere Kosten für den Fahrgast ein Ersatzfahrzeug zu organisieren.",
-        "checked": false
-      },
-      {
-        "_id": "ef00a5f3-6e9a-4e3b-9381-a056be614fbd",
-        "text": "Nur mit Einverständnis des Fahrgastes kann der Auftrag storniert werden.",
-        "checked": true
-      }
-    ]
-  },
-  {
-    "question": "Wer soll bei einem Unfall im Ausland zusätzlich hinzugezogen werden?",
-    "answers": [
-      {
-        "_id": "c06e8a80-0e39-4d55-b0f3-13bc42b5f25c",
-        "text": "Die ausländische Polizei",
-        "checked": true
-      },
-      {
-        "_id": "fcfa66aa-fc14-4753-acf8-d87ee40260f7",
-        "text": "Die Deutsche Polizei",
-        "checked": false
-      },
-      {
-        "_id": "caf3802b-17bc-4e07-9eee-bd6ad87c5e2d",
-        "text": "Die Deutsche Botschaft.",
+        "_id": "17395441-d397-4843-ae38-dfb4c2da5f03",
+        "text": "in jedem Bundesland unterschiedlich.",
         "checked": false
       }
     ]
   },
   {
-    "question": "Welche Stellen müssen bei einem Unfall mit leichten Blechschäden informiert werden (in Außland)?",
+    "question": "Was ist bei der Beförderung eines Babys in einem Auto zu beachten?",
     "answers": [
       {
-        "_id": "8dd5904b-85c6-4f90-b04f-081eabaaf9f9",
-        "text": "Kfz Versicherung",
+        "_id": "494fe5bf-811a-465b-9ca7-6466f20fa382",
+        "text": "Das Baby muss in einer passenden Babyschale gesichert werden.",
         "checked": true
       },
       {
-        "_id": "55639de9-f23c-439f-9a0a-cb46954bc18a",
-        "text": "Evtl. Polizei",
-        "checked": true
+        "_id": "d7344e74-21b5-41fe-8099-fdbeb6c8b564",
+        "text": "Babys der Gewichtsklassen 0 und 0+ müssen im Kindersitz gesichert werden.",
+        "checked": false
       },
       {
-        "_id": "9c20eb52-56d4-48c9-b2a4-cee8aa977373",
-        "text": "Evtl. Botschaft/Konsulat",
+        "_id": "f3bf4bc8-5935-4a85-bfba-fe8eb2d86770",
+        "text": "Sie dürfen nicht auf dem Arm einer Person gesichert werden.",
         "checked": false
       }
     ]
   },
   {
-    "question": "Welche Stellen müssen bei einem Unfall mit verletzten Personen informiert werden(in Außland)?  ",
+    "question": "Was ist zu beachten, wenn Kinder unter 12 Jahren im Taxi befördert werden sollen?",
     "answers": [
       {
-        "_id": "d16ee828-b8c9-4e79-ae12-7e9602b39ed5",
-        "text": "Kfz Versicherung",
+        "_id": "b6d98f93-46fd-4815-853a-3ff5edd1e95e",
+        "text": "Kindern unter 12 Jahre, die kleiner als 150 cm sind dürfen nur auf den hinteren Sitzplätzen befördert werden.",
         "checked": true
       },
       {
-        "_id": "fd764d22-7509-4e65-b996-7c5aca1712bd",
-        "text": "Polizei",
-        "checked": true
-      },
-      {
-        "_id": "e0e17e85-63ce-40d7-8a44-4ae85010b0c3",
-        "text": "Evtl. Botschaft/Konsulat",
+        "_id": "529db855-3f8b-4e38-abf3-0536c7722058",
+        "text": "Kinder der Gewichtsklassen 0 und 0+ müssen bei Beförderungen mit dem Taxi gesichert werden.",
         "checked": false
       },
       {
-        "_id": "4042a3bb-c3d9-469b-ab8c-e1b5521d2f4e",
-        "text": "Genehmigungsbehörde",
-        "checked": false
-      },
-      {
-        "_id": "17664bd9-4f27-49f1-ae00-50a2811fb71e",
-        "text": "Berufsgenossenschaft",
+        "_id": "419358aa-507f-4db5-b6de-1ddd6bc49401",
+        "text": "Die Verpflichtung zur Sicherung durch Rückhalteeinrichtungen ist auf zwei Kinder mit einem Gewicht ab 9 kg beschränkt, wobei wenigstens für ein Kind mit einem Gewicht zwischen 9 und 18 kg eine Sicherung möglich sein muss.",
         "checked": true
       }
     ]
   },
   {
-    "question": "Was muss beim grenzüberschreitenden Verkehr bezüglich der Mehrwertsteuer beachtet werden?  ",
+    "question": "Sie befördern mit Ihrem Taxi eine Mutter mit 3 Kindern (Baby 3 Monate, Mädchen 8 Jahre, Junge 11 Jahre). Wer muss mit Rückhalteeinrichtungen gesichert werden?",
     "answers": [
       {
-        "_id": "26a86c69-eb95-46f5-9249-f473873453f1",
-        "text": "Nur die Inlandsstrecke unterliegt der deutschen Umsatzsteuer. ",
-        "checked": true
-      },
-      {
-        "_id": "d498fd51-100d-498d-8e6f-0bb40767bb74",
-        "text": "Nur die im Ausland gefahrenen Kilometer müssen im Ausland versteuert werden.",
+        "_id": "ef7f5ae2-b935-46d8-b5e6-4e3754b2ece8",
+        "text": "Alle Kinder  benötigen geeigneten Kindersitzen.",
         "checked": false
       },
       {
-        "_id": "26658e10-ce9d-40c9-b053-d1628868c1b4",
-        "text": "Die Abgabenstelle ist im bilateralen Abkommen einsehbar.  ",
+        "_id": "23ab48e9-cca7-485f-b020-98d239522c50",
+        "text": "Das Baby wird auf dem Arm der Mutter gehalten.",
+        "checked": true
+      },
+      {
+        "_id": "fc6dc73d-ad30-454c-8ffb-38b097d99b97",
+        "text": "Mädchen 8 Jahre, Junge 11 Jahre  benötigen geeigneten Kindersitzen.",
         "checked": true
       }
     ]
   },
   {
-    "question": "Beschreiben Sie die Umsatzsteuerregelung bei Fahrten ins Ausland?",
+    "question": "Welche Papiere/Nachweise müssen Taxifahrer bei Polizeikontrollen vorlegen?",
     "answers": [
       {
-        "_id": "1b9cd9b2-6cb8-4760-8c0d-4aca8981275e",
-        "text": "Bei grenzüberschreitender Beförderung unterliegt nur die Inlandsstrecke der deutschen Umsatzsteuer.  ",
-        "checked": true
-      },
-      {
-        "_id": "aba189f0-c5ac-4b3c-93dd-43c36f0927b8",
-        "text": " %  (unterliegt nur die Auslandsstrecke)",
+        "_id": "11b5cbdd-d9ee-4616-a907-a4aad483f8bd",
+        "text": "Konzessionsauszug (Taxi = gelb)",
         "checked": false
       },
       {
-        "_id": "7e650e8c-a7e2-466a-b715-d0482c42ab4c",
-        "text": "Die Auslandsstrecke unterliegt dem nationalen Recht des jeweiligen Staates.",
+        "_id": "6a7017e9-fa04-457b-b396-3a4a8214be3b",
+        "text": "Zulassungsbescheinigung Teil 1= Fahrzeugschein",
+        "checked": false
+      },
+      {
+        "_id": "754dc912-b444-495f-a85a-31f7ae03ffb7",
+        "text": "Stadtplan (in der Regel nicht älter als 4 Jahre, steht in der Taxiordnung)",
+        "checked": false
+      },
+      {
+        "_id": "3a6d3e6d-b01c-4479-be8d-bd72d0d588b2",
+        "text": "Alle Antworten sind korrekt.",
         "checked": true
       }
     ]
   },
   {
-    "question": "Wo müssen die Auslandsumsätze versteuert werden? ",
+    "question": "Welche Papiere/Nachweise müssen Taxifahrer bei Polizeikontrollen vorlegen?",
     "answers": [
       {
-        "_id": "7a0f04d8-9139-4f38-ac91-edddc3aa20ca",
-        "text": "In Deutschland",
+        "_id": "a0120414-bdf7-41dd-a728-54c68c830261",
+        "text": "Konzessionsauszug ",
+        "checked": true
+      },
+      {
+        "_id": "887e03db-4fc6-469f-a063-2d17cfc6eddf",
+        "text": "Zulassungsbescheinigung Teil 2",
         "checked": false
       },
       {
-        "_id": "de1e5bb5-54c4-4352-8627-880cac4c767e",
-        "text": "Im Ausland.",
+        "_id": "f37ddf0d-43b6-4b61-bc52-92fa40bdc010",
+        "text": "Führerschein zur Fahrgastbeförderung P-Schein",
         "checked": true
       },
       {
-        "_id": "817e7f8b-e627-465e-b877-d278e1f4d698",
-        "text": "Die Abgabenstelle ist im bilateralen Abkommen einsehbar.  ",
-        "checked": true
-      }
-    ]
-  },
-  {
-    "question": "Mit welchem Prozentsatz muss die Beförderung von Personen im Inland berechnet werden?",
-    "answers": [
-      {
-        "_id": "0aff7b91-566c-4715-80b5-08d52de959ad",
-        "text": "Bei grenzüberschreitender Beförderung unterliegt nur die Inlandsstrecke der deutschen Umsatzsteuer.  ",
-        "checked": true
-      },
-      {
-        "_id": "61f6f28e-b39a-46a5-bc3a-fb0915697f43",
-        "text": " %  (unterliegt nur die Auslandsstrecke)",
-        "checked": false
-      },
-      {
-        "_id": "09754f69-9d98-4d7c-9ca1-36e8b2dcc0c9",
-        "text": "Die Auslandsstrecke unterliegt dem nationalen Recht des jeweiligen Staates.",
-        "checked": true
-      }
-    ]
-  },
-  {
-    "question": "Wie viele Kilometer müssen im Ausland versteuert werden? ",
-    "answers": [
-      {
-        "_id": "11b231c2-a9b5-46f2-bffd-010acc3bd73b",
-        "text": "Nur die im Ausland gefahrenen Kilometer müssen im Ausland versteuert werden.",
-        "checked": true
-      },
-      {
-        "_id": "c2a737df-4568-40e1-8deb-2aa2a3b6534e",
-        "text": " Kilometer.",
-        "checked": false
-      },
-      {
-        "_id": "cbf91180-f448-4e5d-ae69-99d51c7227fe",
-        "text": " Kilometer",
+        "_id": "8c1ce67a-49a0-4939-b937-d8f6252c7489",
+        "text": "Alle Antworten sind korrekt",
         "checked": false
       }
     ]

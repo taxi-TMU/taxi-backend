@@ -40,17 +40,16 @@ fs.readdir(sourcePath, (err, files) => {
             const currentLine = lines[cursor + 1];
             // correct answer : minus
             if (/\d/.test(currentLine[0]) || currentLine[0] === "+") {
-              let formattedLine = currentLine.replace(/\+ /g, "");
-              formattedLine = formattedLine.replace(/\+/g, "");
+              let formattedLine = currentLine.replace(/\+ /, "");
+              formattedLine = formattedLine.replace(/\+/, "");
               answers.push({
                 _id: uuidv4(),
                 text: formattedLine,
                 checked: true,
               });
             } else if (/\d/.test(currentLine[0]) || currentLine[0] === "-") {
-              let formattedLine = currentLine.replace(/- /g, "");
-              formattedLine = formattedLine.replace(/-/g, "");
-              formattedLine = formattedLine.replace(/\d/g, "");
+              let formattedLine = currentLine.replace(/- /, "");
+              formattedLine = formattedLine.replace(/-/, "");
               answers.push({
                 _id: uuidv4(),
                 text: formattedLine,
