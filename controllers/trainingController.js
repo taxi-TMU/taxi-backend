@@ -9,8 +9,7 @@ const checkIfTestPassed = (quiz) => {
   quiz.questions.forEach((question) => {
     if (question.userAnswer) rightones += 1;
   });
-  if (rightones >= quiz.questions.length / 2) return true;
-  return false;
+  return rightones >= quiz.questions.length / 2;
 };
 
 const countPassed = (quizzes) => {
